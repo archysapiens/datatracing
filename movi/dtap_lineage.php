@@ -1045,7 +1045,7 @@ return "
 													<option value=\"\"></option>
 													<optgroup label=\"Reportes Globales\">
 													  <option>FRY-14Q</option>
-													  <option>252A</option>
+													  <option>2052A</option>
 													  <option>RWA</option>
 													</optgroup>
 
@@ -1245,7 +1245,7 @@ return "<div id=\"home\" class=\"tab-pane active\">
 													<option value=\"\">Seleccione Reporte</option>
 													<optgroup label=\"Reportes Globales\">
 													  <option>FRY-14Q</option>
-													  <option>252A</option>
+													  <option>2052A</option>
 													  <option>RWA</option>
 													</optgroup>
 
@@ -1280,10 +1280,8 @@ return "<div id=\"home\" class=\"tab-pane active\">
 											<option value=\"\">Seleccione Producto</option>
 											<option value=\"IPAB\">Tarjetas de Crédito</option>
 											<option value=\"Cheques\">Créditos Personales</option>
-											<option value=\"Hoptecario\">Créditos Nomina</option>
 											<option value=\"Personal\">Hipotecario</option>
-											<option value=\"Personal\">Pyme</option>
-											<option value=\"Personal\">Infonavit</option>
+											<option value=\"Personal\">Depositos</option>
 										</select>
 
 
@@ -1336,22 +1334,22 @@ return "<div id=\"home\" class=\"tab-pane active\">
 										   <ul class=\"steps\" style=\"margin-left: 0\">
 											   <li id=\"1\" data-step=\"1\" class=\"complete\">
 												   <span id=\"paso1\" class=\"step\">1</span>
-												   <span class=\"title\">Sistema ALS</span>
+												   <span class=\"title\">ALS Advanced Load System</span>
 											   </li>
 
 											   <li id=\"2\"  data-step=\"2\" class=\"complete\">
 												   <span id=\"DTLpaso2\" class=\"step\">2</span>
-												   <span class=\"title\">Sistema 111</span>
+												   <span class=\"title\">ESC Plus-Mexico</span>
 											   </li>
 
 											   <li id=\"3\"  data-step=\"3\" class=\"complete\">
 												   <span id=\"DTLpaso3\" class=\"step\">3</span>
-												   <span class=\"title\">Sistema 5050</span>
+												   <span class=\"title\">Datoteca Teradata</span>
 											   </li>
 
 											   <li id=\"4\"  data-step=\"4\" class=\"complete\">
 												   <span id=\"DTLpaso4\" class=\"step\">4</span>
-												   <span class=\"title\">Sistema SPC</span>
+												   <span class=\"title\">Regulatory Reporting</span>
 											   </li>
 										   </ul>
 						 </div> 
@@ -1392,10 +1390,16 @@ return "<div id=\"home\" class=\"tab-pane active\">
 													<select id=\"listaSistemas1\" data-placeholder=\"Productos...\" 
 														class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
 														<option value=\"0\">Punto Inicial</option>
-														<option value=\"1\">ALS</option>
-														<option value=\"2\">Sistema 111</option>
-														<option value=\"3\">Sistema 5050</option>
-														<option value=\"4\">Sistema SPC</option>
+														<option value=\"1\">ALS Advanced Load System</option>
+														<option value=\"2\">Plastic Management-S111</option>
+														<option value=\"3\">Operative Customer Information System-S016</option>
+														<option value=\"4\">Integral Credit System-S404</option>
+														<option value=\"4\">ESC Plus-Mexico</option>
+														<option value=\"4\">Datoteca Teradata</option>
+														<option value=\"4\">Mexico Data Warehouse</option>
+														<option value=\"4\">Genesis</option>
+														<option value=\"4\">Regulatory Reporting</option>
+														<option value=\"4\">SAS Base IBM</option>
 													</select>
 
 												</div>
@@ -1417,10 +1421,16 @@ return "<div id=\"home\" class=\"tab-pane active\">
 													<select id=\"listaSistemas2\" data-placeholder=\"Productos...\" 
 														class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
 														<option value=\"0\">Punto Final</option>
-														<option value=\"1\">ALS</option>
-														<option value=\"2\">Sistema 111</option>
-														<option value=\"3\">Sistema 5050</option>
-														<option value=\"4\">Sistema SPC</option>
+														<option value=\"1\">ALS Advanced Load System</option>
+														<option value=\"2\">Plastic Management-S111</option>
+														<option value=\"3\">Operative Customer Information System-S016</option>
+														<option value=\"4\">Integral Credit System-S404</option>
+														<option value=\"4\">ESC Plus-Mexico</option>
+														<option value=\"4\">Datoteca Teradata</option>
+														<option value=\"4\">Mexico Data Warehouse</option>
+														<option value=\"4\">Genesis</option>
+														<option value=\"4\">Regulatory Reporting</option>
+														<option value=\"4\">SAS Base IBM</option>
 													</select>
 
 												
@@ -2425,16 +2435,23 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema ALS</span>'+
+'												   <span class=\"title\">Plastic Management-S111</span>'+
 '											   </li>'+
 '											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema 5050</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
-''+
 '											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema SPC</span>'+
+'												   <span class=\"title\">SAS Base IBM</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2444,36 +2461,32 @@ $(\"#listasReportes\").change(function(){
 	}
 	
 
-	if (textSelected=='252A'){
-		var Var252A= ''+
+	if (textSelected=='2052A'){
+		var Var2052A= ''+
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema 1</span>'+
+'												   <span class=\"title\">Operative Customer</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema 1</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema 3</span>'+
-'											   </li>'+
-'											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema 4</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"5\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema 5</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 
 '										   </ul>';
 
 	
-		$('#sistemsStages').html(Var252A);
+		$('#sistemsStages').html(Var2052A);
 		
 	}
 
@@ -2482,13 +2495,18 @@ $(\"#listasReportes\").change(function(){
 	if (textSelected=='RWA'){
 		var RWA= ''+
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
-'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'											  <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema RWA 1</span>'+
+'												   <span class=\"title\">ALS Advanced Loan System</span>'+
 '											   </li>'+
-'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema  RWA  1</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2504,25 +2522,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema IPAB1</span>'+
+'												   <span class=\"title\">Integral Credit System-S404</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema IPAB2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema IPAB3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema IPAB4</span>'+
-'											   </li>'+
-''+
-'											   <li id=\"5\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema IPAB5</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 
 '										   </ul>';
@@ -2538,20 +2551,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Cheques de Caja1</span>'+
+'												   <span class=\"title\">Plastic Management-S111</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema Cheques2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema Cheques3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema Cheques4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2566,20 +2579,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Cheques de Operaciones1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema Operaciones2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema Operaciones3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema Operaciones4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2594,20 +2607,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Cheques de Ope. Dolares1</span>'+
+'												   <span class=\"title\">Operative Customer Information System-S016</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema Ope. Dolares2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema Ope. Dolares3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema Ope. Dolares4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2622,16 +2635,16 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema CNR1</span>'+
+'												   <span class=\"title\">Plastic Management-S111</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema CNR2</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema CNR3</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2647,29 +2660,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema CR1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema CR2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema CR3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema CR4</span>'+
-'											   </li>'+
-'											   <li id=\"5\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">5</span>'+
-'												   <span class=\"title\">Sistema CR5</span>'+
-'											   </li>'+
-''+
-'											   <li id=\"6\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">6</span>'+
-'												   <span class=\"title\">Sistema CR6</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2684,24 +2688,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema RO4H1</span>'+
+'												   <span class=\"title\">Operative Customer Information System-S016</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema RO4H2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema RO4H3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema RO4H4</span>'+
-'											   </li>'+
-'											   <li id=\"5\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">5</span>'+
-'												   <span class=\"title\">Sistema RO4H5</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
@@ -2716,24 +2716,20 @@ $(\"#listasReportes\").change(function(){
 '					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 '											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Sistema PnL1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
 '											   </li>'+
 '											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
 '												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
-'												   <span class=\"title\">Sistema PnL2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
 '											   </li>'+
 ''+
 '											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
 '												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Sistema PnL3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
 '											   </li>'+
 '											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
 '												   <span id=\"paso1\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Sistema PnL4</span>'+
-'											   </li>'+
-'											   <li id=\"5\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">5</span>'+
-'												   <span class=\"title\">Sistema PnL5</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
 '											   </li>'+
 '										   </ul>';
 
