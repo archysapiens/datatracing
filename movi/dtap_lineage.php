@@ -1204,15 +1204,24 @@ return "<div id=\"home\" class=\"tab-pane active\">
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>				
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				
 					<span class=\"\">
-						<i class=\"ace-icon fa fa-cog    big-icon\"></i>
+						<i class=\"ace-icon fa fa-credit-card    big-icon\"></i>
 						
 					</span>
 
 				</div><!-- /.col -->
 
 				<div class=\"col-xs-12 col-sm-9\">
-				<!--
+<!--
 					<h4 class=\"blue\">
 						<span class=\"middle\"> </span>
 
@@ -1256,6 +1265,37 @@ return "<div id=\"home\" class=\"tab-pane active\">
 											</div>
 									</div>
 							</div>
+
+<!-- lista de Producto -->
+						<div class=\"profile-info-row\">
+									<div class=\"profile-info-name blue\"> Producto </div>
+										<div class=\"profile-info-value col-xs-6 \">
+											<div class=\"input-group\">
+												<span class=\"input-group-addon\">
+													<i class=\"blue fa fa-cc-visa fa-lg\"></i>
+												</span>
+
+										<select data-placeholder=\"Productos...\" 
+											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
+											<option value=\"\">Seleccione Producto</option>
+											<option value=\"IPAB\">Tarjetas de Crédito</option>
+											<option value=\"Cheques\">Créditos Personales</option>
+											<option value=\"Hoptecario\">Créditos Nomina</option>
+											<option value=\"Personal\">Hipotecario</option>
+											<option value=\"Personal\">Pyme</option>
+											<option value=\"Personal\">Infonavit</option>
+										</select>
+
+
+												
+											</div>
+									</div>
+							</div>
+
+
+<!-- Fin lista de producto -->
+
+
 
 
 

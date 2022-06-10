@@ -52,7 +52,7 @@ elseif( $method == "GET") {
 	// Debug 2022-05-13 $Usuario = "ur@salud.gob.mx";
 	
 	if(!$res)
-		header("location: index4.php?msg=Credenciales no Autorizadas ");
+		header("location: index.html?msg=Credenciales no Autorizadas ");
 	else{ 
 		session_start();	
 		//foreach ($res as $key ) {
@@ -92,7 +92,7 @@ $ArrPrivilegios = explode("|", $Privilegios);
 $TotalRegistros=3;
 
 // debug 20220513 $Usuario="ura.ssamx@gmail.com";
-if($TotalRegistros > uno AND count($ArrPrivilegios) > UNO){
+if($TotalRegistros > uno AND count($ArrPrivilegios) > UNO and $Usuario == "admin@citi.com"){
 	
 	$_SESSION['privilegios']      = $Privilegios;	
 	header("location: movi_multi_perfil.php");
@@ -102,14 +102,8 @@ else
 	header("location: index2.php");
 **/
 elseif ($Usuario == "na25228@citi.com"){
-	
 	header("location: movi/movi_escritorio.php");
-	
 }
-//elseif ($Usuario == "ur@salud.gob.mx")
-elseif ($Usuario == "admin@citi.com")
-	//header("location: smweb/smweb_escritorio.php");
-	header("location: movi_multi_perfil.php");
 elseif ($Usuario == "ura.ssamx@gmail.com")
 	header("location: movi/movi_escritorio_ura.php");
 elseif ($Usuario == "ip.ssamx@gmail.com")
