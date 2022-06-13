@@ -1084,7 +1084,7 @@ return "
 											<script type=\"text/javascript\">
     
 											let reportes = [\"Seleccione Reporte\",\"FRY-14Q\",\"2052A\",\"RWA\",\"IPAB\",\"CNR\"];
-											let productos = [\"Préstamos personales\",\"Targetas\",\"Depósitos\",\"Hipoteca\",
+											let productos = [\"Préstamos personales\",\"Tarjetas\",\"Depósitos\",\"Hipoteca\",
 											\"Tarjetas de crédito\",\"Pequeños negocios\",\"Créditos de consumo\"];
 											let atributos = [\"NUMCLIENTE\",\"TPER\",\"CUENTABASICA\",\"ROLLOVER\",\"DIGITO\",\"CTE_LIBRE\", 
 											\"V_ACCT\",\"N_CURR_BAL\",\"N_CYCLE_DUE\",\"V_ORG\",\"N_TAX_BNP_LIQ\",
@@ -1163,7 +1163,7 @@ return "
 													case 'Préstamos personales':
 														Recorrer1(combobox3,atributos.slice(0,6))
 														break;
-													case 'Targetas':
+													case 'Tarjetas':
 														Recorrer1(combobox3,atributos.slice(6,11))
 														break;
 													case 'Depósitos':
