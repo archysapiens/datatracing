@@ -143,7 +143,7 @@ $('#EnviarReporte').click(function(){
                     <td id=\"ltptd\">HIPOTECA</td>
                     <td id=\"ltptd\">RT-SGL-145678-JIYH-FF-MX</td>
                     <td id=\"ltptd\">0102030405</td>
-                    <td id=\"ltptd\">BASE_CJU_RGZ</td>
+                    <td id=\"ltptd\">CTE_GFCID</td>
                     <td id=\"ltptd\">
                         <div class=\"profile-info-row\">
 							<div class=\"profile-info-value  col-xs-6 \">
@@ -190,7 +190,7 @@ $('#EnviarReporte').click(function(){
                         <td id=\"ltptd\">PRESTAMOS</td>
                         <td id=\"ltptd\">RT-SGL-145678-FF-MX-000</td>
                         <td id=\"ltptd\">00000000</td>
-                        <td id=\"ltptd\">RISK_CFT_RGZ</td>
+                        <td id=\"ltptd\">CUENTABASICA</td>
                         <td id=\"ltptd\">
                             <div class=\"profile-info-row\">
                                 <div class=\"profile-info-value  col-xs-6 \">
@@ -237,7 +237,7 @@ $('#EnviarReporte').click(function(){
                         <td id=\"ltptd\">TARJETA DE CREDITO</td>
                         <td id=\"ltptd\">RT-SGL-145678-M78546-MX</td>
                         <td id=\"ltptd\">07892315</td>
-                        <td id=\"ltptd\">UNIQ_ID_CCY_RGZ</td>
+                        <td id=\"ltptd\">N_CURR_BAL</td>
                         <td id=\"ltptd\">
                             <div class=\"profile-info-row\">
                                 <div class=\"profile-info-value  col-xs-6 \">
@@ -284,7 +284,7 @@ $('#EnviarReporte').click(function(){
                         <td id=\"ltptd\">TARJETA DE CREDITO</td>
                         <td id=\"ltptd\">RT-SGL-145678-MTDS-FF-MX</td>
                         <td id=\"ltptd\">0102030405</td>
-                        <td id=\"ltptd\">BASE_CCY_RGZ</td>
+                        <td id=\"ltptd\">N_TAX_BNP_LIQ</td>
                         <td id=\"ltptd\">
                             <div class=\"profile-info-row\">
                                 <div class=\"profile-info-value  col-xs-6 \">
@@ -331,7 +331,7 @@ $('#EnviarReporte').click(function(){
                         <td id=\"ltptd\">HIPOTECA</td>
                         <td id=\"ltptd\">RT-YPW-PPLKR-9854-FF-MX01</td>
                         <td id=\"ltptd\">019073545</td>
-                        <td id=\"ltptd\">RISK_MGT_HFT-CD</td>
+                        <td id=\"ltptd\">ROLLOVER</td>
                         <td id=\"ltptd\">
                             <div class=\"profile-info-row\">
                                 <div class=\"profile-info-value  col-xs-6 \">
@@ -378,7 +378,7 @@ $('#EnviarReporte').click(function(){
                             <td id=\"ltptd\">PRESTAMOS</td>
                             <td id=\"ltptd\">RT-SGL-14FDKO8-MTDS-KFJ-5432</td>
                             <td id=\"ltptd\">0102030405</td>
-                            <td id=\"ltptd\">UNIQ_FG_KHL</td>
+                            <td id=\"ltptd\">CTE_LIBRE2</td>
                             <td id=\"ltptd\">
                                 <div class=\"profile-info-row\">
                                     <div class=\"profile-info-value  col-xs-6 \">
@@ -994,6 +994,8 @@ return "
 						</span>
 					</h4>
 -->
+
+
 					<div class=\"profile-user-info\">
 
 						<div class=\"profile-info-row\">
@@ -1008,39 +1010,22 @@ return "
 												<!--
 												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Email\" required=\"\" autofocus=\"\">
 												-->
-											  <select data-placeholder=\"Select Report\" class=\"chosen-select\" tabindex=\"5\" style=\"width: 425px\">
-													<option value=\"\">Seleccione Reporte</option>
-													<optgroup label=\"Reportes Globales\">
-													  <option>FRY-14Q</option>
-													  <option>252A</option>
-													  <option>RWA</option>
-													</optgroup>
-
-													<optgroup label=\"Reportes Locales\">
-													  <option>IPAB</option>
-													  <option>Cheques de Caja</option>
-													  <option>Operaciones Relevantes</option>
-													  <option>Operaciones en Dolares</option>
-													  <option>CNR</option>
-													  <option>CR</option>
-													  <option>RO4H</option>
-													  <option>PnL</option>
-													</optgroup>
-												  </select>
-
-
+											  <select id=\"combobox1\" name= \"combobox1\" data-placeholder=\"Select Report\" class=\"chosen-select\" tabindex=\"5\" style=\"width: 425px\">
 												
+												  </select>
 											</div>							
 													</span>
 												</div>
 											</div>
+
+
 
 						<div class=\"profile-info-row\">
 												<div class=\"profile-info-name blue\"> Producto </div>
 
 												<div class=\"profile-info-value col-xs-6 \">
 													<span>
-<div class=\"input-group\">
+											<div class=\"input-group\">
 												<span class=\"input-group-addon\">
 													<i class=\"blue fa  fa-cc-visa\"></i>
 												</span>
@@ -1051,72 +1036,161 @@ return "
 									  <!-- select Group 
 												<div class=\"col-lg-8\">
 												  -->
-										<select data-placeholder=\"Productos...\" 
+										<select id=\"combobox2\" name= \"combobox2\"data-placeholder=\"Productos...\" 
 											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
-											<option value=\"\">Seleccione Producto</option>
-											<option value=\"IPAB\">Tarjetas de Crédito</option>
-											<option value=\"Cheques\">Créditos Personales</option>
-											<option value=\"Hoptecario\">Créditos Nomina</option>
-											<option value=\"Personal\">Hipotecario</option>
-											<option value=\"Personal\">Pyme</option>
-											<option value=\"Personal\">Infonavit</option>
+											
 										</select>
-
-
-
 								<!--				  
 												</div>
 												
 								 END select Group -->
-
-												
-												
 											</div>					
-					</span>
+											</span>
 												</div>
 											</div>
 
 
 
+											<div class=\"profile-info-row\">
+												<div class=\"profile-info-name blue\"> Atributos</div>
 
-						<div class=\"profile-info-row\">
-							<div class=\"profile-info-name blue\"> Attributes </div>
+												<div class=\"profile-info-value col-xs-6 \">
+													<span>
+											<div class=\"input-group\">
+												<span class=\"input-group-addon\">
+													<i class=\"blue fa  fa-cc-visa\"></i>
+												</span>
+												
+												<!--
+												<input type=\"tel\" value=\"\" id=\"telefono\" name=\"telefono\" class=\"form-control\" placeholder=\"Numero De oficina\" required=\"\" autofocus=\"\">
+												-->
+									  <!-- select Group 
+												<div class=\"col-lg-8\">
+												  -->
+										<select id=\"combobox3\" name= \"combobox3\" data-placeholder=\"Atributos...\" 
+											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\" multiple>
+											
+										</select>
+								<!--				  
+												</div>
+												
+								 END select Group -->
+											</div>					
+											</span>
+												</div>
+											</div>
 
-							<div class=\"profile-info-value col-xs-12 \">
-								<span>
-								<div class=\"input-group\">
-										<span class=\"input-group-addon\">
-												<i class=\"blue fa  fa-project-diagram\"></i>
-										</span>
 
-
-
-<!--
- <link href=\"../css/animate.css\" rel=\"stylesheet\">
-<link href=\"../css/style.css\" rel=\"stylesheet\">
--->
-										<!--
-											<input type=\"tel\" value=\"\" id=\"telefonoce\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Celular\" required=\"\" autofocus=\"\">
-										-->
-										<div class=\"ibox-content\">
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Total Balance</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Due Balance</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Day Past Due</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-1-xs \">Minimkum Amount to Pay</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Ordinary Interest Rate</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Moratorium Interest Rate</span> <br>
-
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Bucket</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Risk Indicator</span> <br>
-
+											<script type=\"text/javascript\">
+    
+											let reportes = [\"Seleccione Reporte\",\"FRY-14Q\",\"2052A\",\"RWA\",\"IPAB\",\"CNR\"];
+											let productos = [\"Préstamos personales\",\"Targetas\",\"Depósitos\",\"Hipoteca\",
+											\"Tarjetas de crédito\",\"Pequeños negocios\",\"Créditos de consumo\"];
+											let atributos = [\"NUMCLIENTE\",\"TPER\",\"CUENTABASICA\",\"ROLLOVER\",\"DIGITO\",\"CTE_LIBRE\", 
+											\"V_ACCT\",\"N_CURR_BAL\",\"N_CYCLE_DUE\",\"V_ORG\",\"N_TAX_BNP_LIQ\",
+											\"NUMCLIENTE\",\"TPER\",\"DIGITO\",\"ROLLOVER\",\"CUENTABASICA\",\"CTE_GFCID\",\"CTE_LIBRE2\",
+											\"NUMCLIENTE\",\"TPER\",\"CTE_GFCID\",\"CTE_LIBRE2\",\"CTE_NUM\",
+											\"FECHA_DISPOSICION\",\"FECHA_VENCIMIENTO\",\"CONTRATO\",\"MX_ESTATUS_CONTRATO\",\"TASA_INTERES\",\"PLAZO\"]
 										
-
-										</div>
+											let combobox1 = document.getElementById(\"combobox1\")
+											let combobox2 = document.getElementById(\"combobox2\")
+											let combobox3 = document.getElementById(\"combobox3\")
 										
-										</div>
-								</span>
-							</div>
-						</div>
+											function Recorrer(combobox,valores)
+											{
+												combobox2.innerHTML = '' 
+												combobox3.innerHTML = '' 
+										
+												for(let index of valores)
+												{
+													combobox.innerHTML +=`
+													<option>\${index}</option>
+													` 
+												}
+											}
+										
+											function llenarproduc(){
+												Recorrer(combobox1,reportes)
+											}
+											llenarproduc()
+										
+											combobox1.addEventListener('change',(e)=>{
+												let dato=e.target.value
+												switch (dato) {
+													case 'Seleccione Reporte':
+														Recorrer(combobox2)
+														break;
+													case 'FRY-14Q':
+														Recorrer(combobox2,productos.slice(4,7))
+														break;
+													case '2052A':
+														Recorrer(combobox2,productos.slice(0,4))
+														break;
+													case 'RWA':
+														Recorrer(combobox2,productos.slice(2,5))
+														break;
+													case 'IPAB':
+														Recorrer(combobox2,productos.slice(1,4))
+														break;
+													case 'CNR':
+														Recorrer(combobox2,productos.slice(0,3))
+														break;
+												
+													default:
+														break;
+												}
+											})
+										
+											function Recorrer1(comboboxM,valoress)
+											{
+												combobox3.innerHTML = '' 
+										
+												for(let index of valoress)
+												{
+													comboboxM.innerHTML +=`
+													<option value=\" \">\${index}</option>
+													` 
+												}
+											}
+										
+											function llenarproduc2(){
+												Recorrer1(combobox2,atributos)
+											}
+										
+											combobox2.addEventListener('change',(e)=>{
+												let dato1=e.target.value
+												switch (dato1) {
+													case 'Préstamos personales':
+														Recorrer1(combobox3,atributos.slice(0,6))
+														break;
+													case 'Targetas':
+														Recorrer1(combobox3,atributos.slice(6,11))
+														break;
+													case 'Depósitos':
+														Recorrer1(combobox3,atributos.slice(11,18))
+														break;
+													case 'Hipoteca':
+														Recorrer1(combobox3,atributos.slice(18,23))
+														break;
+													case 'Tarjetas de crédito':
+														Recorrer1(combobox3,atributos.slice(23,26))
+														break;
+													case 'Pequeños negocios':
+														Recorrer1(combobox3,atributos.slice(26,29))
+														break;
+													case 'Créditos de consumo':
+														Recorrer1(combobox3,atributos.slice(2,6))
+														break;
+												
+													default:
+														break;
+												}
+											});
+										
+										</script>
+
+
+
 
 
 					<div class=\"profile-info-row\">
