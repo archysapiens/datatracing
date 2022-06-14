@@ -84,20 +84,16 @@ elseif( $method == "GET") {
 		$_SESSION['clave_acceso'] 	= $Passwd;
 	}// fin del if
 
-
+fclose($FileDebug);
 $Privilegios ="|1|2|3";
 
 $ArrPrivilegios = explode("|", $Privilegios);
 
 $TotalRegistros=3;
 
-$Usuario = strtolower($Usuario);
-
 // debug 20220513 $Usuario="ura.ssamx@gmail.com";
 if($TotalRegistros > uno AND count($ArrPrivilegios) > UNO and $Usuario == "admin@citi.com"){
 	
-				fwrite($FileDebug , "if(\$TotalRegistros > uno AND count(\$ArrPrivilegios) > UNO and \$Usuario == \"admin@citi.com\" \n");
-				
 	$_SESSION['privilegios']      = $Privilegios;	
 	header("location: movi_multi_perfil.php");
 }
@@ -106,8 +102,7 @@ else
 	header("location: index2.php");
 **/
 elseif ($Usuario == "na25228@citi.com"){
-	fwrite($FileDebug , " elseif (\$Usuario == \"na25228@citi.com\"){ \n");
-	header("location: movi/movi_escritorio_ura.php?tipo=mp&origen=na25228@citi.com");
+	header("location: movi/movi_escritorio.php");
 }
 elseif ($Usuario == "ura.ssamx@gmail.com")
 	header("location: movi/movi_escritorio_ura.php");
@@ -126,5 +121,4 @@ elseif ($Usuario == "eec.ssamx@gmail.com") // expediente electronico consulta
 else
 	header("location: index4.php");
 
-fclose($FileDebug);
 ?>

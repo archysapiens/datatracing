@@ -1275,7 +1275,7 @@ return "<div id=\"home\" class=\"tab-pane active\">
 													<i class=\"blue fa fa-cc-visa fa-lg\"></i>
 												</span>
 
-										<select data-placeholder=\"Productos...\" 
+										<select id= \"listaProductos\" data-placeholder=\"Productos...\" 
 											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
 											<option value=\"\">Seleccione Producto</option>
 											<option value=\"IPAB\">Tarjetas de Crédito</option>
@@ -1328,9 +1328,14 @@ return "<div id=\"home\" class=\"tab-pane active\">
 						<!-- time line -->
 						<div class=\"profile-info-name blue\"> Lineage 
 										</div>
-<hr>
-<hr>
+
+
 						<div id=\"sistemsStages\" class=\"profile-info-value col-xs-12\" > 
+<!--						
+						<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/2052a_cards.png\"
+						style=\"	width: 700px;	height: 300px;\">
+-->						
+						
 										   <ul class=\"steps\" style=\"margin-left: 0\">
 											   <li id=\"1\" data-step=\"1\" class=\"complete\">
 												   <span id=\"paso1\" class=\"step\">1</span>
@@ -1352,6 +1357,7 @@ return "<div id=\"home\" class=\"tab-pane active\">
 												   <span class=\"title\">Regulatory Reporting</span>
 											   </li>
 										   </ul>
+														   
 						 </div> 
 						 <div class=\"space space-4\"></div>
 						 <div class=\"space space-4\"></div>
@@ -1363,11 +1369,12 @@ return "<div id=\"home\" class=\"tab-pane active\">
 						<hr>  
 						<hr>
 						<hr>
+						<!--
 						<p id=\"DTLp\"  class=\"alert alert-success\"> 
 						 Lineage and Stages
 						 
 						</p>   
-																				 
+							-->													 
 																					
 
 
@@ -1501,9 +1508,11 @@ echo "
 						<div class=\"row\">
 							<div class=\"col-lg-12 \">
 								<div class=\"ibox float-e-margins\">
+								<!--
 									<div class=\"ibox-title col-lg-12 \">
 										<h3>RWA - Data Tracing Lineage Mode </h3>
 									</div>
+								-->	
 
 <!-- inicio formulario -->
 
@@ -1516,7 +1525,7 @@ echo "
 										<li class=\"active\">
 											<a data-toggle=\"tab\" href=\"#faq-tab-1\">
 												<i class=\"blue ace-icon fa fa-check bigger-220\"></i>
-												Punto de Validación
+												Punto de Validación 
 											</a>
 										</li>
 
@@ -2417,7 +2426,114 @@ $(document).ready(function () {
 		
 	});
 	
+	window.onclick = function(clickEvent) {
+		//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.src);
+		  if (clickEvent.target.tagName==\"IMG\" && clickEvent.target.id==\"imageLineage\"){
+			//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.src);
+			//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.id);
+			
+			console.log(clickEvent.target.src);
+			
+			var contenido=
+            
+				'<div>'+
+			'<img id=\"imageLineage2\"  alt=\"image\" class=\"img-responsive\" src=\"' + clickEvent.target.src +'\"'+
+			'	style=\"	width: 1000px;	height: 450px;\">' +
+			'                                               </div> '  	;
+
+
+               $.alert({
+                icon: 'fa fa-gears fa-2x fa-fw',
+                title: 'Data Tracing Lineage Process',
+                content: contenido,
+                columnClass: 'xlarge',
+                animationSpeed:1000,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                animationBounce: 2.0,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'blue',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+			
+			
+			
+			
+		  }
+	}
+
 	
+	function openOnImageClick(){
+			console.log('openOnImageClick');
+	}	
+	
+	function fncFillSelect(listsProductosPar, options){
+			var listsProductos = document.getElementById(listsProductosPar);
+			$(listsProductos).empty();
+
+			for(var i = 0; i < options.length; i++) {
+				var opt = options[i];
+				var item = opt.split(\":\");
+				var el = document.createElement(\"option\");
+				el.textContent = item[1];
+				el.value = item[0];
+				listsProductos.appendChild(el);
+			}
+		}
+
+$(\"#imageLineage\").click(function(){
+	
+	console.log('imageLineage');
+});
+
+$(\"#listaProductos\").change(function(){
+	 var optionSelected = $(this).find(\"option:selected\");
+     var valueSelected  = optionSelected.val();
+     var textSelected   = optionSelected.text();
+	console.log(valueSelected);
+	console.log(textSelected);
+
+	var imagen = document.getElementById('imageLineage');
+	console.log(imagen);
+
+	if (valueSelected=='A8'){
+			imagen.setAttribute('src' ,'../images/fry14q_a8.png');
+	}	
+	if (valueSelected=='A5'){
+			imagen.setAttribute('src' ,'../images/fry14q_a5.png');
+	}	
+	if (valueSelected=='A6'){
+			imagen.setAttribute('src' ,'../images/fry14q_a6.png');
+	}	
+	if (valueSelected=='A3'){
+		imagen.setAttribute('src' ,'../images/fry14q_a3.png');
+	}	
+
+	if (valueSelected=='Cards'){
+		imagen.setAttribute('src' ,'../images/2052a_cards.png');
+	}	
+	if (valueSelected=='Deposits'){
+		imagen.setAttribute('src' ,'../images/2052a_deposits.png');
+	}	
+	if (valueSelected=='Mortgage'){
+		imagen.setAttribute('src' ,'../images/2052a_mortgage.png');
+	}	
+	if (valueSelected=='Personal Loan'){
+		imagen.setAttribute('src' ,'../images/2052a_personal_loan.png');
+	}	
+
+	
+});
+
 
 $(\"#listasReportes\").change(function(){
 
@@ -2431,62 +2547,90 @@ $(\"#listasReportes\").change(function(){
 	
 	
 	if (textSelected=='FRY-14Q'){
-		var FRY14Q= ''+
-'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
-'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
-'												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Plastic Management-S111</span>'+
-'											   </li>'+
-'											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Datoteca Teradata</span>'+
-'											   </li>'+
-'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">SAS Base IBM</span>'+
-'											   </li>'+
-'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Mexico Data Warehouse</span>'+
-'											   </li>'+
-'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Regulatory Reporting</span>'+
-'											   </li>'+
-'										   </ul>';
+		if(true){
+				var FRY14Q= ''+
+		'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+		'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+		'												   <span id=\"paso1\" class=\"step\">1</span>'+
+		'												   <span class=\"title\">Plastic Management-S111</span>'+
+		'											   </li>'+
+		'											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+		'												   <span class=\"title\">Datoteca Teradata</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">SAS Base IBM</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">Regulatory Reporting</span>'+
+		'											   </li>'+
+		'										   </ul>';
 
-	
-		$('#sistemsStages').html(FRY14Q);
+			
+				$('#sistemsStages').html(FRY14Q);
+		}
+		else{
+			var FRY14Q= ''+
+			'<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/fry14q_a3.png\"'+
+			'	style=\"	width: 700px;	height: 300px;\">';
+			$('#sistemsStages').html(FRY14Q);
+
+		}
+		
+		var options = [\"A3:A3 (Credit Cards)\", \"A8:A8 (Small Businss)\", \"A5:A5 (Mortgages)\", \"A6:A6 (Other Customer Loans)\"];
+		fncFillSelect(\"listaProductos\", options);
+		
 		
 	}
 	
 
 	if (textSelected=='2052A'){
-		var Var2052A= ''+
-'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
-'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
-'												   <span id=\"paso1\" class=\"step\">1</span>'+
-'												   <span class=\"title\">Operative Customer</span>'+
-'											   </li>'+
-'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
-'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
-'												   <span class=\"title\">Datoteca Teradata</span>'+
-'											   </li>'+
-''+
-'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Genesis</span>'+
-'											   </li>'+
-''+
-'											   <li id=\"5\"  data-step=\"4\" class=\"complete\">'+
-'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
-'												   <span class=\"title\">Regulatory Reporting</span>'+
-'											   </li>'+
+		if(true){
+					var Var2052A= ''+
+			'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+			'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+			'												   <span id=\"paso1\" class=\"step\">1</span>'+
+			'												   <span class=\"title\">Operative Customer</span>'+
+			'											   </li>'+
+			'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+			'												   <span class=\"title\">Datoteca Teradata</span>'+
+			'											   </li>'+
+			''+
+			'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+			'												   <span class=\"title\">Genesis</span>'+
+			'											   </li>'+
+			''+
+			'											   <li id=\"5\"  data-step=\"4\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+			'												   <span class=\"title\">Regulatory Reporting</span>'+
+			'											   </li>'+
 
-'										   </ul>';
+			'										   </ul>';
 
 	
-		$('#sistemsStages').html(Var2052A);
+			$('#sistemsStages').html(Var2052A);
+		}
+		else{
+			var Var2052A= ''+
+			'<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/2052a_personal_loan.png\"'+
+			'	style=\"	width: 700px;	height: 300px;\">';
+			$('#sistemsStages').html(Var2052A);
+
+		}
+	
+
+		var options = [\"Personal Loan:Personal Loan\", \"Cards:Cards\", \"Deposits:Deposits\", \"Mortgage:Mortgage\"];
+		fncFillSelect(\"listaProductos\", options);
+
+
 		
 	}
 

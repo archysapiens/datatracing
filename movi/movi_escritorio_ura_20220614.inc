@@ -3125,9 +3125,7 @@ $MenuInicio
 </li>                    
 <li>
 
-<!--                       <a   href=\"data_tracing_launch.html\"  -->
-					   
-					   <a   href=\"#\" id=\"dtap_inbox\" 
+                       <a   href=\"data_tracing_launch.html\" 
                                 class=\"btn btn-w-m btn-outline btn-default \">
                         <i class=\"fa fa fa-cogs fa-2x pull-left\"></i>
                         <span class=\"nav-label \">Inbox</span>
@@ -3148,12 +3146,11 @@ $MenuInicio
 -->
 <li>
 <!-- movi_escritorio_ura_dz_tab.php?tipo=mp&origen=m -->
-<!-- <a id=\"smweb-ingreso\" href=\"#\"  -->
 
-                       <a id=\"dtap_wizard\" href=\"#\" 
+                       <a id=\"smweb-ingreso\" href=\"#\" 
                                 class=\"btn btn-w-m btn-outline btn-default \">
                         <i class=\"fa  fa-pencil-square-o fa-2x pull-left\"></i>
-                        <span class=\"nav-label \"> New Tracing </span>
+                        <span class=\"nav-label \"> New Tracing Tab </span>
                         </a>
 
 </li>
@@ -3169,10 +3166,8 @@ $MenuInicio
 
 </li>
 
-<!-- Nuevo wizard -->
-<!--
 <li>
-
+<!-- Nuevo wizard -->
 
                        <a id=\"dtap_wizard\" href=\"#\" 
                                 class=\"btn btn-w-m btn-outline btn-default \">
@@ -3181,7 +3176,7 @@ $MenuInicio
                         </a>
 
 </li>
--->
+
 
 
 
@@ -3956,7 +3951,7 @@ var contenido = ' ';
 		
 		$('#dtap_linaje').click(function(){
 			console.log('dtap_linaje');
-			$.post('dtap_lineage.html', { \"id\": 1, \"pzavteid\":123 },
+			$.post('dtap_lineage.php', { \"id\": 1, \"pzavteid\":123 },
                   function(response,status) {
                         //alert(response);
                         var string = response;
@@ -3978,20 +3973,6 @@ var contenido = ' ';
              ); // fin post
 
 		});
-
-
-
-		$('#dtap_inbox').click(function(){
-			console.log('dtap_linaje');
-			$.post('dtap_inbox.html', { \"id\": 1, \"pzavteid\":123 },
-                  function(response,status) {
-                        var string = response;
-                        $('#main_page').html(response);
-                  }// fin function
-             ); // fin post
-
-		});
-
 
 
 
