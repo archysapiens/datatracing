@@ -1331,11 +1331,11 @@ return "<div id=\"home\" class=\"tab-pane active\">
 
 
 						<div id=\"sistemsStages\" class=\"profile-info-value col-xs-12\" > 
-<!--						
+						
 						<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/2052a_cards.png\"
 						style=\"	width: 700px;	height: 300px;\">
--->						
 						
+						<!--
 										   <ul class=\"steps\" style=\"margin-left: 0\">
 											   <li id=\"1\" data-step=\"1\" class=\"complete\">
 												   <span id=\"paso1\" class=\"step\">1</span>
@@ -1357,7 +1357,7 @@ return "<div id=\"home\" class=\"tab-pane active\">
 												   <span class=\"title\">Regulatory Reporting</span>
 											   </li>
 										   </ul>
-														   
+				-->										   
 						 </div> 
 						 <div class=\"space space-4\"></div>
 						 <div class=\"space space-4\"></div>
@@ -2547,7 +2547,7 @@ $(\"#listasReportes\").change(function(){
 	
 	
 	if (textSelected=='FRY-14Q'){
-		if(true){
+		if(false){
 				var FRY14Q= ''+
 		'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 		'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
@@ -2591,7 +2591,7 @@ $(\"#listasReportes\").change(function(){
 	
 
 	if (textSelected=='2052A'){
-		if(true){
+		if(false){
 					var Var2052A= ''+
 			'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
 			'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
