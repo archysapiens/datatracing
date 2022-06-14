@@ -2823,6 +2823,7 @@ function PersonalizaPerfil(){
 
 function fncBuildBody($ConfiguracionPanels)
 {
+	global $origen;
     $ConfiguracionPanels;
     $DatosConfig = explode("|", $ConfiguracionPanels);
     $HeaderConfig =$DatosConfig[CERO];
@@ -2833,6 +2834,18 @@ function fncBuildBody($ConfiguracionPanels)
     $MaxQna = $HeaderArray[TRES];
     $MaxLim = $HeaderArray[CUATRO];
 
+	$MenuInicio= "";
+	if($origen !="na25228@citi.com"){
+		$MenuInicio= "
+		<li>
+                       <a id=\"Buscar\" href=\"../movi_multi_perfil.php\" class=\"btn btn-w-m btn-outline btn-default \">
+                        <i class=\"fa  fa-home fa-2x pull-left\"></i>
+                        <span class=\"nav-label\">Inicio</span>
+                        </a>
+
+		</li>
+		";
+	}
 
 	$PrimParte = fncBuildTopNavBar();
     $PanelesCarga = construyePanelesCarga($ConfiguracionPanels);
@@ -3086,7 +3099,10 @@ $FechaLim <br>
                     </li>
 					
 					
-					
+<!-- Parametrizar -->					
+	
+$MenuInicio
+<!--	
 <li>
                        <a id=\"Buscar\" href=\"../movi_multi_perfil.php\" class=\"btn btn-w-m btn-outline btn-default \">
                         <i class=\"fa  fa-home fa-2x pull-left\"></i>
@@ -3094,8 +3110,9 @@ $FechaLim <br>
                         </a>
 
 </li>
-						
-					
+	-->
+	
+<!--Fin Parametrizar -->					
 					
 
 <li>
@@ -3148,6 +3165,19 @@ $FechaLim <br>
                         </a>
 
 </li>
+
+<li>
+<!-- Nuevo wizard -->
+
+                       <a id=\"dtap_wizard\" href=\"#\" 
+                                class=\"btn btn-w-m btn-outline btn-default \">
+                        <i class=\"fa  fa-pencil-square-o fa-2x pull-left\"></i>
+                        <span class=\"nav-label \">New tracing Wizard</span>
+                        </a>
+
+</li>
+
+
 
 
 
@@ -3922,6 +3952,19 @@ var contenido = ' ';
 		$('#dtap_linaje').click(function(){
 			console.log('dtap_linaje');
 			$.post('dtap_lineage.php', { \"id\": 1, \"pzavteid\":123 },
+                  function(response,status) {
+                        //alert(response);
+                        var string = response;
+                        $('#main_page').html(response);
+                  }// fin function
+             ); // fin post
+
+		});
+
+
+		$('#dtap_wizard').click(function(){
+			console.log('dtap_linaje');
+			$.post('dtap_wizard.html', { \"id\": 1, \"pzavteid\":123 },
                   function(response,status) {
                         //alert(response);
                         var string = response;

@@ -1128,8 +1128,10 @@ return "
 												<span class=\"input-group-addon\">
 													<i class=\" blue fa fa-calendar fa-lg\"></i>
 												</span>
+												
 								<input type=\"date\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" 
 								class=\"form-control\" placeholder=\"Fecha De la información\" required=\"\" autofocus=\"\">
+								
 								</div>
 							</div>
 							
@@ -1246,17 +1248,17 @@ return "<div id=\"home\" class=\"tab-pane active\">
 					<div class=\"profile-user-info\">
 
 						<div class=\"profile-info-row\">
-												<div class=\"profile-info-name blue\"> Data Tracing Name </div>
+											<div class=\"profile-info-name blue\"> Data Tracing Name </div>
 
 												<div class=\"profile-info-value col-xs-6 \">
 													<div class=\"input-group\">
-												<span class=\"input-group-addon\">
+													<span class=\"input-group-addon\">
 													<i class=\"blue fa fa-key fa-lg\"></i>
-												</span>
-												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Id Data Tracing Event\" required=\"\" autofocus=\"\">
-											</div>
+													</span>
+													<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Id Data Tracing Event\" required=\"\" autofocus=\"\">
 												</div>
 											</div>
+						</div>
 
 						<div class=\"profile-info-row\">
 												<div class=\"profile-info-name blue\"> Reporte </div>
@@ -2203,17 +2205,35 @@ SERVICIOS SOCIALES Y CULTURALES, ISSSTE
 
 
 <!-- fin formulario -->
+<!--
 							<div class=\"ibox-content\">
+	
 								<div class=\"board\">
 									<div class=\"board-inner\">
 										<div class=\"tabs-left\">
+-->
+										
+										<div class=\"container\">
+												  <div class=\"row\">
+													<div class=\"col-sm\">
+													  One of three columns
+													</div>
+													<div class=\"col-sm\">
+													  One of three columns
+													</div>
+													<div class=\"col-sm\">
+													  One of three columns
+													</div>
+												  </div>
 										</div>
-									</div>
-
-
-
+<!--
 								</div>
+										
+									</div>
+								</div>
+								
 							</div>
+-->							
 				</div>
 			</div>
 		</div>
@@ -2360,34 +2380,34 @@ $(window).bind('resize', function () {
             
 	$('#ContenedorJQGrid').attr(\"class\", \"space-200\");
 
-		var contenido=
+			var contenido=
             
-          '<div>'+
-'                                                   <ul class=\"steps\" style=\"margin-left: 0\">'+
-'                                                       <li data-step=\"1\" class=\"complete\" >'+
-'                                                           <span class=\"step\">1</span>'+
-'                                                           <span class=\"title\">User</span>'+
-'                                                       </li>'+
-''+
-'                                                       <li data-step=\"2\" class=\"complete\" >'+
-'                                                           <span class=\"step\">2</span>'+
-'                                                           <span class=\"title\">Instance</span>'+
-'                                                       </li>'+
-''+
-'                                                       <li data-step=\"3\"  class=\"complete\">'+
-'                                                           <span class=\"step\">3</span>'+
-'                                                           <span class=\"title\">Cnnx</span>'+
-'                                                       </li>'+
-''+
-'                                                       <li data-step=\"4\" class=\"complete\" >'+
-'                                                           <span class=\"step\" >4</span>'+
-'                                                           <span class=\"title\">Ok</span>'+
-'                                                       </li>'+
-'                                                   </ul>'+
-'                                               </div> <hr>'  +
-'<p class=\"alert alert-success \">' +
- '  La conexión a la base de datos fue exitosa, sa ha agregado el set de datos selecionado.  ' +
-  '                                                       </p> '  ;
+			  '<div>'+
+					'                    <ul class=\"steps\" style=\"margin-left: 0\">'+
+					'                          <li data-step=\"1\" class=\"complete\" >'+
+					'                          <span class=\"step\">1</span>'+
+					'                          <span class=\"title\">User</span>'+
+					'                          </li>'+
+					''+
+					'                          <li data-step=\"2\" class=\"complete\" >'+
+					'                            <span class=\"step\">2</span>'+
+					'                            <span class=\"title\">Instance</span>'+
+					'                          </li>'+
+					''+
+					'                          <li data-step=\"3\"  class=\"complete\">'+
+					'                               <span class=\"step\">3</span>'+
+					'                               <span class=\"title\">Cnnx</span>'+
+					'                          </li>'+
+					''+
+					'                          <li data-step=\"4\" class=\"complete\" >'+
+					'                              <span class=\"step\" >4</span>'+
+					'                             <span class=\"title\">Ok</span>'+
+					'                          </li>'+
+					'               </ul>'+
+					'        </div> <hr>'  +
+					'<p class=\"alert alert-success \">' +
+					 '  La conexión a la base de datos fue exitosa, sa ha agregado el set de datos selecionado.  ' +
+					  '                                                       </p> '  ;
 
 
 

@@ -20,9 +20,14 @@ $Bienvenida="";
 if(isset($_SESSION['modalidad']))
 	$Bienvenida=$_SESSION['modalidad'];
 
+$origen="";
+if(isset($_GET['origen']))
+	$origen=$_GET['origen'];
+
 $quincenaurl="";
 if(isset($_GET['quincenaurl']))
 	$quincenaurl=$_GET['quincenaurl'];
+
 
 $anioquincenaurl="";
 if(isset($_GET['anioquincenaurl']))
