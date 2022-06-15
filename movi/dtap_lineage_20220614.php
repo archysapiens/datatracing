@@ -16,7 +16,6 @@ img:hover {
 }
 </style>
 
-
 <script>
 $('#EnviarReporte').click(function(){
 	
@@ -72,7 +71,7 @@ $('#EnviarReporte').click(function(){
                          btnClass: 'btn-green',
                          action:function () {
 
-							window.location.href = \"http://localhost/dtap/movi/movi_escritorio_ura_tab.php\";
+							window.location.href = \"http://localhost/movi/movi/movi_escritorio_ura_tab.php\";
                         }
                     }
                 }
@@ -234,7 +233,7 @@ $('#EnviarReporte').click(function(){
                         </td>
                         </tr>
                     <tr>
-                        <td id=\"ltptd\">TARJETA DE CREDITO</td>
+                        <td id=\"ltptd\">TARGETA DE CREDITO</td>
                         <td id=\"ltptd\">RT-SGL-145678-M78546-MX</td>
                         <td id=\"ltptd\">07892315</td>
                         <td id=\"ltptd\">UNIQ_ID_CCY_RGZ</td>
@@ -281,7 +280,7 @@ $('#EnviarReporte').click(function(){
                         </td>
                     </tr>
                     <tr>
-                        <td id=\"ltptd\">TARJETA DE CREDITO</td>
+                        <td id=\"ltptd\">TARGETA DE CREDITO</td>
                         <td id=\"ltptd\">RT-SGL-145678-MTDS-FF-MX</td>
                         <td id=\"ltptd\">0102030405</td>
                         <td id=\"ltptd\">BASE_CCY_RGZ</td>
@@ -997,7 +996,7 @@ return "
 					<div class=\"profile-user-info\">
 
 						<div class=\"profile-info-row\">
-												<div class=\"profile-info-name blue\"> Reporte </div>
+												<div class=\"profile-info-name blue\"> Productos </div>
 
 												<div class=\"profile-info-value col-xs-6 \">
 													<span>
@@ -1008,25 +1007,16 @@ return "
 												<!--
 												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Email\" required=\"\" autofocus=\"\">
 												-->
-											  <select data-placeholder=\"Select Report\" class=\"chosen-select\" tabindex=\"5\" style=\"width: 425px\">
-													<option value=\"\">Seleccione Reporte</option>
-													<optgroup label=\"Reportes Globales\">
-													  <option>FRY-14Q</option>
-													  <option>252A</option>
-													  <option>RWA</option>
-													</optgroup>
-
-													<optgroup label=\"Reportes Locales\">
-													  <option>IPAB</option>
-													  <option>Cheques de Caja</option>
-													  <option>Operaciones Relevantes</option>
-													  <option>Operaciones en Dolares</option>
-													  <option>CNR</option>
-													  <option>CR</option>
-													  <option>RO4H</option>
-													  <option>PnL</option>
-													</optgroup>
-												  </select>
+										<select data-placeholder=\"Productos...\" 
+											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
+											<option value=\"\">Select</option>
+											<option value=\"IPAB\">Tarjetas de Crédito</option>
+											<option value=\"Cheques\">Créditos Personales</option>
+											<option value=\"Hoptecario\">Créditos Nomina</option>
+											<option value=\"Personal\">Hipotecario</option>
+											<option value=\"Personal\">Pyme</option>
+											<option value=\"Personal\">Infonavit</option>
+										</select>
 
 
 												
@@ -1036,7 +1026,7 @@ return "
 											</div>
 
 						<div class=\"profile-info-row\">
-												<div class=\"profile-info-name blue\"> Producto </div>
+												<div class=\"profile-info-name blue\"> Reporte Regulatorio </div>
 
 												<div class=\"profile-info-value col-xs-6 \">
 													<span>
@@ -1051,19 +1041,25 @@ return "
 									  <!-- select Group 
 												<div class=\"col-lg-8\">
 												  -->
-										<select data-placeholder=\"Productos...\" 
-											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
-											<option value=\"\">Seleccione Producto</option>
-											<option value=\"IPAB\">Tarjetas de Crédito</option>
-											<option value=\"Cheques\">Créditos Personales</option>
-											<option value=\"Hoptecario\">Créditos Nomina</option>
-											<option value=\"Personal\">Hipotecario</option>
-											<option value=\"Personal\">Pyme</option>
-											<option value=\"Personal\">Infonavit</option>
-										</select>
+												  <select data-placeholder=\"Select Report\" class=\"chosen-select\" tabindex=\"5\" style=\"width: 425px\">
+													<option value=\"\"></option>
+													<optgroup label=\"Reportes Globales\">
+													  <option>FRY-14Q</option>
+													  <option>2052A</option>
+													  <option>RWA</option>
+													</optgroup>
 
-
-
+													<optgroup label=\"Reportes Locales\">
+													  <option>IPAB</option>
+													  <option>Cheques de Caja</option>
+													  <option>Operaciones Relevantes</option>
+													  <option>Operaciones en Dolares</option>
+													  <option>CNR</option>
+													  <option>CR</option>
+													  <option>RO4H</option>
+													  <option>PnL</option>
+													</optgroup>
+												  </select>
 								<!--				  
 												</div>
 												
@@ -1082,7 +1078,7 @@ return "
 						<div class=\"profile-info-row\">
 							<div class=\"profile-info-name blue\"> Attributes </div>
 
-							<div class=\"profile-info-value col-xs-12 \">
+							<div class=\"profile-info-value col-xs-6 \">
 								<span>
 								<div class=\"input-group\">
 										<span class=\"input-group-addon\">
@@ -1102,7 +1098,7 @@ return "
 										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Total Balance</span> <br>
 										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Due Balance</span> <br>
 										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Day Past Due</span> <br>
-										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-1-xs \">Minimkum Amount to Pay</span> <br>
+										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Minimkum Amount to Pay</span> <br>
 										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Ordinary Interest Rate</span> <br>
 										<input type=\"checkbox\" id=\"checkbox\"  > <span class=\"m-l-xs \">Moratorium Interest Rate</span> <br>
 
@@ -1120,7 +1116,6 @@ return "
 
 
 					<div class=\"profile-info-row\">
-					
 							<div class=\"profile-info-name blue\"> Date Information </div>
 
 							<div class=\"profile-info-value  col-xs-12 \">
@@ -1128,32 +1123,29 @@ return "
 												<span class=\"input-group-addon\">
 													<i class=\" blue fa fa-calendar fa-lg\"></i>
 												</span>
-												
 								<input type=\"date\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" 
 								class=\"form-control\" placeholder=\"Fecha De la información\" required=\"\" autofocus=\"\">
-								
 								</div>
 							</div>
-							
 						</div>					
 
-
+<!--
 
 						<div class=\"profile-info-row\">
-							<div class=\"profile-info-name blue\"> Num.Rows </div>
+							<div class=\"profile-info-name blue\"> Uso Futuro </div>
 
-							<div class=\"profile-info-value  col-xs-12 \">
+							<div class=\"profile-info-value  col-xs-6 \">
 									<div class=\"input-group\">
 											<span class=\"input-group-addon\">
-												<i class=\"blue fa fa-database\"></i>
+												<i class=\"blue fa fa-facebook-official\"></i>
 											</span>
-											<input type=\"text\" value=\"100\" id=\"numRows\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Número de regstros a recuperar.\" required=\"\" autofocus=\"\">
+											<input type=\"text\" value=\"\" id=\"telefonoce\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Uso Futuro\" required=\"\" autofocus=\"\">
 									</div>				
 								
 								</span>
 							</div>
 						</div>
-
+-->
 					</div>
 
 					<div class=\"hr hr-8 dotted\"></div>
@@ -1203,7 +1195,8 @@ function capturaPersonales(){
 
 return "<div id=\"home\" class=\"tab-pane active\">
 			<div class=\"row\">
-				<div class=\"col-xs-12 col-sm-3 center\">
+			
+				<div class=\"col-xs-12 col-sm-1 center\">
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>
@@ -1211,31 +1204,24 @@ return "<div id=\"home\" class=\"tab-pane active\">
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>
 				<div class=\"space space-4\"></div>				
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				<div class=\"space space-4\"></div>
+				
 					<span class=\"\">
-					<!--
-						<img class=\"editable img-responsive\" 
-						alt=\"Regulatory Report\" id=\"avatar2\" src=\"../images/report.png\" 
-						style=\"width: 220px;height:220px;\">
-						
-					-->	
-						<i class=\"ace-icon fa fa-cog    big-icon\"></i>
+						<i class=\"ace-icon fa fa-credit-card    big-icon\"></i>
 						
 					</span>
 
-<!--
-					<div class=\"space space-4\"></div>
-					
-
-					<a href=\"#\" class=\"btn btn-sm btn-block btn-success\">
-						<i class=\"ace-icon fa fa-plus-circle bigger-120\"></i>
-	
-						<span class=\"bigger-110\">RRID:12-100-1-M1C031P-0000064 </span>
-						
-					</a>
--->
 				</div><!-- /.col -->
 
 				<div class=\"col-xs-12 col-sm-9\">
+<!--
 					<h4 class=\"blue\">
 						<span class=\"middle\"> </span>
 
@@ -1244,66 +1230,251 @@ return "<div id=\"home\" class=\"tab-pane active\">
 							Data Tracing  Process
 						</span>
 					</h4>
-
+-->
 					<div class=\"profile-user-info\">
 
 						<div class=\"profile-info-row\">
-											<div class=\"profile-info-name blue\"> Data Tracing Name </div>
+									<div class=\"profile-info-name blue\"> Reporte </div>
+										<div class=\"profile-info-value col-xs-6 \">
+											<div class=\"input-group\">
+												<span class=\"input-group-addon\">
+													<i class=\"blue fa fa-cc-visa fa-lg\"></i>
+												</span>
 
-												<div class=\"profile-info-value col-xs-6 \">
-													<div class=\"input-group\">
-													<span class=\"input-group-addon\">
-													<i class=\"blue fa fa-key fa-lg\"></i>
-													</span>
-													<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Id Data Tracing Event\" required=\"\" autofocus=\"\">
-												</div>
+												  <select id=\"listasReportes\" data-placeholder=\"Select Report\" class=\"chosen-select\" tabindex=\"5\" style=\"width: 425px\">
+													<option value=\"\">Seleccione Reporte</option>
+													<optgroup label=\"Reportes Globales\">
+													  <option>FRY-14Q</option>
+													  <option>2052A</option>
+													  <option>RWA</option>
+													</optgroup>
+
+													<optgroup label=\"Reportes Locales\">
+													  <option>IPAB</option>
+													  <option>Cheques de Caja</option>
+													  <option>Operaciones Relevantes</option>
+													  <option>Operaciones en Dolares</option>
+													  <option>CNR</option>
+													  <option>CR</option>
+													  <option>RO4H</option>
+													  <option>PnL</option>
+													</optgroup>
+												  </select>
+
+												
 											</div>
+									</div>
+							</div>
+
+<!-- lista de Producto -->
+						<div class=\"profile-info-row\">
+									<div class=\"profile-info-name blue\"> Producto </div>
+										<div class=\"profile-info-value col-xs-6 \">
+											<div class=\"input-group\">
+												<span class=\"input-group-addon\">
+													<i class=\"blue fa fa-cc-visa fa-lg\"></i>
+												</span>
+
+										<select id= \"listaProductos\" data-placeholder=\"Productos...\" 
+											class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
+											<option value=\"\">Seleccione Producto</option>
+											<option value=\"IPAB\">Tarjetas de Crédito</option>
+											<option value=\"Cheques\">Créditos Personales</option>
+											<option value=\"Personal\">Hipotecario</option>
+											<option value=\"Personal\">Depositos</option>
+										</select>
+
+
+												
+											</div>
+									</div>
+							</div>
+
+
+<!-- Fin lista de producto -->
+
+
+
+
+
+<!-- Boton para Extraer Imagen -->
+<!--
+						<div class=\"profile-info-row\">
+										<div class=\"profile-info-name blue\"> 
+										</div>
+										<div class=\"profile-info-value col-xs-8 \">
+												<div class=\"input-group\">
+							
+													<span class=\"input-group-addon\">
+														<i class=\"blue fa fa-key fa-lg\"></i>
+													</span>
+							
+										<a id=\"btnConnxLineage\" href=\"#\" class=\"btn btn-sm btn-block btn-primary\">
+												<i class=\"ace-icon fa fa-plus-circle bigger-120\"></i>
+												<span class=\"bigger-110\">Extraer Lineage</span>
+											</a>
+
+												</div>
+										</div>
 						</div>
 
-						<div class=\"profile-info-row\">
-												<div class=\"profile-info-name blue\"> Reporte </div>
 
-												<div class=\"profile-info-value col-xs-6 \">
-													<div class=\"input-group\">
-												<span class=\"input-group-addon\">
-													<i class=\"blue  fa fa-file-pdf-o fa-lg\"></i>
-												</span>
-												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\"Report Name\" required=\"\" autofocus=\"\" >
-											</div>
+-->
+
+<!-- Fin Boton para Extraer Imagen -->
+
+						<div class=\"profile-info-row\">
+
+						<!-- time line -->
+						<div class=\"profile-info-name blue\"> Lineage 
+										</div>
+
+
+						<div id=\"sistemsStages\" class=\"profile-info-value col-xs-12\" > 
+						
+						<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/2052a_cards.png\"
+						style=\"	width: 700px;	height: 300px;\">
+						
+						<!--
+										   <ul class=\"steps\" style=\"margin-left: 0\">
+											   <li id=\"1\" data-step=\"1\" class=\"complete\">
+												   <span id=\"paso1\" class=\"step\">1</span>
+												   <span class=\"title\">ALS Advanced Load System</span>
+											   </li>
+
+											   <li id=\"2\"  data-step=\"2\" class=\"complete\">
+												   <span id=\"DTLpaso2\" class=\"step\">2</span>
+												   <span class=\"title\">ESC Plus-Mexico</span>
+											   </li>
+
+											   <li id=\"3\"  data-step=\"3\" class=\"complete\">
+												   <span id=\"DTLpaso3\" class=\"step\">3</span>
+												   <span class=\"title\">Datoteca Teradata</span>
+											   </li>
+
+											   <li id=\"4\"  data-step=\"4\" class=\"complete\">
+												   <span id=\"DTLpaso4\" class=\"step\">4</span>
+												   <span class=\"title\">Regulatory Reporting</span>
+											   </li>
+										   </ul>
+				-->										   
+						 </div> 
+						 <div class=\"space space-4\"></div>
+						 <div class=\"space space-4\"></div>
+						 <div class=\"space space-4\"></div>
+						<div class=\"space space-4\"></div>
+						 <div class=\"space space-4\"></div>
+						 <div class=\"space space-4\"></div>
+
+						<hr>  
+						<hr>
+						<hr>
+						<!--
+						<p id=\"DTLp\"  class=\"alert alert-success\"> 
+						 Lineage and Stages
+						 
+						</p>   
+							-->													 
+																					
+
+
+						<!-- end time line -->
+						
+						</div>
+
+
+
+
+						<div class=\"profile-info-row\">
+										<div class=\"profile-info-name blue\"> Punto Ini
+										</div>
+										<div class=\"profile-info-value col-xs-6 \">
+												<div class=\"input-group\">
+													<span class=\"input-group-addon\">
+														<i class=\"blue fa  fa-caret-square-o-right fa-lg\"></i>
+													</span>
+													
+													<select id=\"listaSistemas1\" data-placeholder=\"Productos...\" 
+														class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
+														<option value=\"0\">Punto Inicial</option>
+														<option value=\"1\">ALS Advanced Load System</option>
+														<option value=\"2\">Plastic Management-S111</option>
+														<option value=\"3\">Operative Customer Information System-S016</option>
+														<option value=\"4\">Integral Credit System-S404</option>
+														<option value=\"4\">ESC Plus-Mexico</option>
+														<option value=\"4\">Datoteca Teradata</option>
+														<option value=\"4\">Mexico Data Warehouse</option>
+														<option value=\"4\">Genesis</option>
+														<option value=\"4\">Regulatory Reporting</option>
+														<option value=\"4\">SAS Base IBM</option>
+													</select>
+
 												</div>
-											</div>
+										</div>
+						</div>
 
 
 
 
 						<div class=\"profile-info-row\">
-							<div class=\"profile-info-name blue\"> Report Owner </div>
+							<div class=\"profile-info-name blue\"> Punto Final </div>
 
 							<div class=\"profile-info-value col-xs-6 \">
-								<div class=\"input-group\">
+										<div class=\"input-group\">
 												<span class=\"input-group-addon\">
-													<i class=\" blue fa fa-user fa-lg\"></i>
+													<i class=\" blue fa  fa-caret-square-o-left fa-lg\"></i>
 												</span>
-												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\" Report Owner\" required=\"\" autofocus=\"\">
-											</div>
+
+													<select id=\"listaSistemas2\" data-placeholder=\"Productos...\" 
+														class=\"chosen-select\"  style=\"width:425px;\" tabindex=\"4\">
+														<option value=\"0\">Punto Final</option>
+														<option value=\"1\">ALS Advanced Load System</option>
+														<option value=\"2\">Plastic Management-S111</option>
+														<option value=\"3\">Operative Customer Information System-S016</option>
+														<option value=\"4\">Integral Credit System-S404</option>
+														<option value=\"4\">ESC Plus-Mexico</option>
+														<option value=\"4\">Datoteca Teradata</option>
+														<option value=\"4\">Mexico Data Warehouse</option>
+														<option value=\"4\">Genesis</option>
+														<option value=\"4\">Regulatory Reporting</option>
+														<option value=\"4\">SAS Base IBM</option>
+													</select>
+
+												
+												<!--
+												<input type=\"text\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" class=\"form-control\" placeholder=\" Data Custodian\" required=\"\" autofocus=\"\">
+												
+												-->
+										</div>
 							</div>
 						</div>
 
-
+<div class=\"hr hr-8 dotted\"></div>
 						<div class=\"profile-info-row\">
-						<!--
-							<div class=\"profile-info-name blue\"> Date Information erase</div>
+							<div class=\"profile-info-name blue\">  </div>
 
-							<div class=\"profile-info-value  col-xs-6 \">
+							<div class=\"profile-info-value  col-xs-4 \">
 								<div class=\"input-group\">
+								<!--
 												<span class=\"input-group-addon\">
+												
 													<i class=\" blue fa fa-calendar fa-lg\"></i>
-												</span>
+													</span>
+											-->	
+												
+											<a id=\"btnConnxLineage\" href=\"#\" class=\"btn btn-sm btn-block btn-primary\">
+												<i class=\"ace-icon fa  fa-paper-plane-o bigger-120\"></i>
+												<span class=\"bigger-110\">Procesar</span>
+											</a>
+
+								
+								<!--	
 								<input type=\"date\" value=\"\" id=\"inputUsuario\" name=\"inputUsuario\" 
 								class=\"form-control\" placeholder=\"Fecha De la información\" required=\"\" autofocus=\"\">
+								-->
+								
 								</div>
 							</div>
-						-->	
 						</div>
 
 
@@ -1337,9 +1508,11 @@ echo "
 						<div class=\"row\">
 							<div class=\"col-lg-12 \">
 								<div class=\"ibox float-e-margins\">
+								<!--
 									<div class=\"ibox-title col-lg-12 \">
-										<h3>RWA - Data Tracing Process Configuration </h3>
+										<h3>RWA - Data Tracing Lineage Mode </h3>
 									</div>
+								-->	
 
 <!-- inicio formulario -->
 
@@ -1351,10 +1524,12 @@ echo "
 									<ul class=\"nav nav-tabs padding-18 tab-size-bigger\" id=\"myTab\">
 										<li class=\"active\">
 											<a data-toggle=\"tab\" href=\"#faq-tab-1\">
-												<i class=\"blue ace-icon fa fa-cog bigger-220\"></i>
-												Configuración
+												<i class=\"blue ace-icon fa fa-check bigger-220\"></i>
+												Punto de Validación 
 											</a>
 										</li>
+
+<!--
 
 										<li>
 											<a data-toggle=\"tab\" href=\"#faq-tab-2\">
@@ -1371,7 +1546,7 @@ echo "
 										</li>
 
 
-<!--
+
 
 										<li>
 											<a data-toggle=\"tab\" href=\"#faq-tab-3\">
@@ -1380,7 +1555,7 @@ echo "
 											</a>
 										</li>
 
--->
+
 										<li>
 											<a data-toggle=\"tab\" href=\"#faq-tab-4\">
 												<i class=\"blue ace-icon fa fa-paperclip bigger-220\"></i>
@@ -1388,7 +1563,6 @@ echo "
 											</a>
 										</li>
 
-<!--
 										<li>
 											<a data-toggle=\"tab\" href=\"#faq-tab-5\">
 												<i class=\"blue ace-icon fa fa-gears bigger-220\"></i>
@@ -1396,6 +1570,7 @@ echo "
 											</a>
 										</li>
 -->
+
 <!--
 
 										<li>
@@ -1419,7 +1594,7 @@ echo "
 										<div id=\"faq-tab-1\" class=\"tab-pane fade in active\">
 											<h4 class=\"blue\">
 												<i class=\"ace-icon fa fa-check bigger-110\"></i>
-												Regulatory Data Tracing Process Configuration
+												Data Tracing Lineage Process
 											</h4>
 
 $Personales
@@ -2205,35 +2380,17 @@ SERVICIOS SOCIALES Y CULTURALES, ISSSTE
 
 
 <!-- fin formulario -->
-<!--
 							<div class=\"ibox-content\">
-	
 								<div class=\"board\">
 									<div class=\"board-inner\">
 										<div class=\"tabs-left\">
--->
-										
-										<div class=\"container\">
-												  <div class=\"row\">
-													<div class=\"col-sm\">
-													  One of three columns
-													</div>
-													<div class=\"col-sm\">
-													  One of three columns
-													</div>
-													<div class=\"col-sm\">
-													  One of three columns
-													</div>
-												  </div>
 										</div>
-<!--
-								</div>
-										
 									</div>
+
+
+
 								</div>
-								
 							</div>
--->							
 				</div>
 			</div>
 		</div>
@@ -2254,6 +2411,480 @@ SERVICIOS SOCIALES Y CULTURALES, ISSSTE
 	
 <script>
 $(document).ready(function () {
+	
+	
+	$(\"#btnConnxLineage\").click(function(){
+		console.log('Procesando btnConnxLineage');
+		$.post('dtap_leneage_result.html', { \"id\": 1, \"pzavteid\":123 },
+		  function(response,status) {
+				var string = response;
+				$('#main_page').html(response);
+		  }// fin function
+		); // fin post
+
+		
+		
+	});
+	
+	window.onclick = function(clickEvent) {
+		//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.src);
+		  if (clickEvent.target.tagName==\"IMG\" && clickEvent.target.id==\"imageLineage\"){
+			//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.src);
+			//window.alert(\"Hi, im going to enlarge this image: \"+clickEvent.target.id);
+			
+			console.log(clickEvent.target.src);
+			
+			var contenido=
+            
+				'<div>'+
+			'<img id=\"imageLineage2\"  alt=\"image\" class=\"img-responsive\" src=\"' + clickEvent.target.src +'\"'+
+			'	style=\"	width: 1000px;	height: 450px;\">' +
+			'                                               </div> '  	;
+
+
+               $.alert({
+                icon: 'fa fa-gears fa-2x fa-fw',
+                title: 'Data Tracing Lineage Process',
+                content: contenido,
+                columnClass: 'xlarge',
+                animationSpeed:1000,
+                animationBounce:1,
+                animation: 'zoom',
+                closeAnimation: 'zoom',
+                animationBounce: 2.0,
+                animateFromElement: false,
+                theme: 'material',
+                type: 'blue',
+                buttons: {
+                    Aceptar: {
+                         btnClass: 'btn-green',
+                         action:function () {
+                        }
+                    }
+                }
+            });
+
+			
+			
+			
+			
+		  }
+	}
+
+	
+	function openOnImageClick(){
+			console.log('openOnImageClick');
+	}	
+	
+	function fncFillSelect(listsProductosPar, options){
+			var listsProductos = document.getElementById(listsProductosPar);
+			$(listsProductos).empty();
+
+			for(var i = 0; i < options.length; i++) {
+				var opt = options[i];
+				var item = opt.split(\":\");
+				var el = document.createElement(\"option\");
+				el.textContent = item[1];
+				el.value = item[0];
+				listsProductos.appendChild(el);
+			}
+		}
+
+$(\"#imageLineage\").click(function(){
+	
+	console.log('imageLineage');
+});
+
+$(\"#listaProductos\").change(function(){
+	 var optionSelected = $(this).find(\"option:selected\");
+     var valueSelected  = optionSelected.val();
+     var textSelected   = optionSelected.text();
+	console.log(valueSelected);
+	console.log(textSelected);
+
+	var imagen = document.getElementById('imageLineage');
+	console.log(imagen);
+
+	if (valueSelected=='A8'){
+			imagen.setAttribute('src' ,'../images/fry14q_a8.png');
+	}	
+	if (valueSelected=='A5'){
+			imagen.setAttribute('src' ,'../images/fry14q_a5.png');
+	}	
+	if (valueSelected=='A6'){
+			imagen.setAttribute('src' ,'../images/fry14q_a6.png');
+	}	
+	if (valueSelected=='A3'){
+		imagen.setAttribute('src' ,'../images/fry14q_a3.png');
+	}	
+
+	if (valueSelected=='Cards'){
+		imagen.setAttribute('src' ,'../images/2052a_cards.png');
+	}	
+	if (valueSelected=='Deposits'){
+		imagen.setAttribute('src' ,'../images/2052a_deposits.png');
+	}	
+	if (valueSelected=='Mortgage'){
+		imagen.setAttribute('src' ,'../images/2052a_mortgage.png');
+	}	
+	if (valueSelected=='Personal Loan'){
+		imagen.setAttribute('src' ,'../images/2052a_personal_loan.png');
+	}	
+
+	
+});
+
+
+$(\"#listasReportes\").change(function(){
+
+	console.log('listasReportes');
+	
+	 var optionSelected = $(this).find(\"option:selected\");
+     var valueSelected  = optionSelected.val();
+     var textSelected   = optionSelected.text();
+	 console.log(valueSelected);
+	 console.log(textSelected);
+	
+	
+	if (textSelected=='FRY-14Q'){
+		if(false){
+				var FRY14Q= ''+
+		'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+		'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+		'												   <span id=\"paso1\" class=\"step\">1</span>'+
+		'												   <span class=\"title\">Plastic Management-S111</span>'+
+		'											   </li>'+
+		'											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+		'												   <span class=\"title\">Datoteca Teradata</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">SAS Base IBM</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+		'											   </li>'+
+		'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+		'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+		'												   <span class=\"title\">Regulatory Reporting</span>'+
+		'											   </li>'+
+		'										   </ul>';
+
+			
+				$('#sistemsStages').html(FRY14Q);
+		}
+		else{
+			var FRY14Q= ''+
+			'<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/fry14q_a3.png\"'+
+			'	style=\"	width: 700px;	height: 300px;\">';
+			$('#sistemsStages').html(FRY14Q);
+
+		}
+		
+		var options = [\"A3:A3 (Credit Cards)\", \"A8:A8 (Small Businss)\", \"A5:A5 (Mortgages)\", \"A6:A6 (Other Customer Loans)\"];
+		fncFillSelect(\"listaProductos\", options);
+		
+		
+	}
+	
+
+	if (textSelected=='2052A'){
+		if(false){
+					var Var2052A= ''+
+			'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+			'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+			'												   <span id=\"paso1\" class=\"step\">1</span>'+
+			'												   <span class=\"title\">Operative Customer</span>'+
+			'											   </li>'+
+			'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+			'												   <span class=\"title\">Datoteca Teradata</span>'+
+			'											   </li>'+
+			''+
+			'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+			'												   <span class=\"title\">Genesis</span>'+
+			'											   </li>'+
+			''+
+			'											   <li id=\"5\"  data-step=\"4\" class=\"complete\">'+
+			'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+			'												   <span class=\"title\">Regulatory Reporting</span>'+
+			'											   </li>'+
+
+			'										   </ul>';
+
+	
+			$('#sistemsStages').html(Var2052A);
+		}
+		else{
+			var Var2052A= ''+
+			'<img id=\"imageLineage\"  alt=\"image\" class=\"img-responsive\" src=\"../images/2052a_personal_loan.png\"'+
+			'	style=\"	width: 700px;	height: 300px;\">';
+			$('#sistemsStages').html(Var2052A);
+
+		}
+	
+
+		var options = [\"Personal Loan:Personal Loan\", \"Cards:Cards\", \"Deposits:Deposits\", \"Mortgage:Mortgage\"];
+		fncFillSelect(\"listaProductos\", options);
+
+
+		
+	}
+
+
+
+	if (textSelected=='RWA'){
+		var RWA= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											  <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">ALS Advanced Loan System</span>'+
+'											   </li>'+
+'											   <li id=\"3\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"4\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(RWA);
+		
+	}
+
+
+
+	if (textSelected=='IPAB'){
+		var IPAB= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">Integral Credit System-S404</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(IPAB);
+		
+	}
+
+
+	if (textSelected=='Cheques de Caja'){
+		var ChequesdeCaja= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">Plastic Management-S111</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(ChequesdeCaja);
+		
+	}
+
+
+	if (textSelected=='Operaciones Relevantes'){
+		var OperacionesRelevantes= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(OperacionesRelevantes);
+		
+	}
+
+
+	if (textSelected=='Operaciones en Dolares'){
+		var OperacionesenDolares= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">Operative Customer Information System-S016</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(OperacionesenDolares);
+		
+	}
+
+
+	if (textSelected=='CNR'){
+		var CNR= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">Plastic Management-S111</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(CNR);
+		
+	}
+
+
+
+	if (textSelected=='CR'){
+		var CR= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(CR);
+		
+	}
+
+
+	if (textSelected=='RO4H'){
+		var RO4H= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">Operative Customer Information System-S016</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Datoteca Teradata</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(RO4H);
+		
+	}
+
+
+	if (textSelected=='PnL'){
+		var PnL= ''+
+'					   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'											   <li id=\"1\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">1</span>'+
+'												   <span class=\"title\">ESC Plus-Mexico</span>'+
+'											   </li>'+
+'											   <li id=\"2\"  data-step=\"3\" class=\"complete\">'+
+'												   <span id=\"DTLpaso3\" class=\"step\">2</span>'+
+'												   <span class=\"title\">Mexico Data Warehouse</span>'+
+'											   </li>'+
+''+
+'											   <li id=\"3\"  data-step=\"4\" class=\"complete\">'+
+'												   <span id=\"DTLpaso4\" class=\"step\">3</span>'+
+'												   <span class=\"title\">Genesis</span>'+
+'											   </li>'+
+'											   <li id=\"4\" data-step=\"1\" class=\"complete\">'+
+'												   <span id=\"paso1\" class=\"step\">4</span>'+
+'												   <span class=\"title\">Regulatory Reporting</span>'+
+'											   </li>'+
+'										   </ul>';
+
+	
+		$('#sistemsStages').html(PnL);
+		
+	}
+
+	
+	
+});
 
 $(\"#btnProcesarLTP\").click(function(){
 	console.log('Procesando Información');
@@ -2380,41 +3011,41 @@ $(window).bind('resize', function () {
             
 	$('#ContenedorJQGrid').attr(\"class\", \"space-200\");
 
-			var contenido=
+		var contenido=
             
-			  '<div>'+
-					'                    <ul class=\"steps\" style=\"margin-left: 0\">'+
-					'                          <li data-step=\"1\" class=\"complete\" >'+
-					'                          <span class=\"step\">1</span>'+
-					'                          <span class=\"title\">User</span>'+
-					'                          </li>'+
-					''+
-					'                          <li data-step=\"2\" class=\"complete\" >'+
-					'                            <span class=\"step\">2</span>'+
-					'                            <span class=\"title\">Instance</span>'+
-					'                          </li>'+
-					''+
-					'                          <li data-step=\"3\"  class=\"complete\">'+
-					'                               <span class=\"step\">3</span>'+
-					'                               <span class=\"title\">Cnnx</span>'+
-					'                          </li>'+
-					''+
-					'                          <li data-step=\"4\" class=\"complete\" >'+
-					'                              <span class=\"step\" >4</span>'+
-					'                             <span class=\"title\">Ok</span>'+
-					'                          </li>'+
-					'               </ul>'+
-					'        </div> <hr>'  +
-					'<p class=\"alert alert-success \">' +
-					 '  La conexión a la base de datos fue exitosa, sa ha agregado el set de datos selecionado.  ' +
-					  '                                                       </p> '  ;
+          '<div>'+
+'                                                   <ul class=\"steps\" style=\"margin-left: 0\">'+
+'                                                       <li data-step=\"1\" class=\"complete\" >'+
+'                                                           <span class=\"step\">1</span>'+
+'                                                           <span class=\"title\">User</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"2\" class=\"complete\" >'+
+'                                                           <span class=\"step\">2</span>'+
+'                                                           <span class=\"title\">Instance</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"3\"  class=\"complete\">'+
+'                                                           <span class=\"step\">3</span>'+
+'                                                           <span class=\"title\">Cnnx</span>'+
+'                                                       </li>'+
+''+
+'                                                       <li data-step=\"4\" class=\"complete\" >'+
+'                                                           <span class=\"step\" >4</span>'+
+'                                                           <span class=\"title\">Ok</span>'+
+'                                                       </li>'+
+'                                                   </ul>'+
+'                                               </div> <hr>'  +
+'<p class=\"alert alert-success \">' +
+ '  La conexión a la base de datos fue exitosa, sa ha agregado el set de datos selecionado.  ' +
+  '                                                       </p> '  ;
 
 
 
 
                $.alert({
                 icon: 'fa fa-database fa-2x fa-fw',
-                title: 'Database Connection',
+                title: 'Databae Connection',
                 content: contenido,
                 columnClass: 'medium',
                 animationSpeed:1800,
