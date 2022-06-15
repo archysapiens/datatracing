@@ -46,7 +46,11 @@
         
         <link href="../css/input-foto.css" rel="stylesheet">
         <link href="../css/animate.css" rel="stylesheet">
-        <link href="../css/style.css" rel="stylesheet">            
+        <link href="../css/style.css" rel="stylesheet">
+
+
+        <!--######################################### mensajes de ayuda ###########################################-->
+        
 
 <!--Confirm -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -123,32 +127,17 @@ var Noe;
   });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//mesaje #######################################################
+//$(document).ready(function(){
+  //$('[data-toggle="popover"]').popover();   
+//});
 
 
 });
 //Fin boton arriba
 
+
+//
 
 
 </script>
@@ -695,6 +684,9 @@ function PersonalizaPerfil(){
 						<div class="profile-info-row">
 												<div class="profile-info-name blue"> Data Tracing Name </div>
 
+                                                 <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                                                 <a class="fa fa-question-circle" data-toggle="popover" data-placement="right" data-trigger="hover"  data-content="Ingresa el nombre del reporte a realizar"></a>
+
 												<div class="profile-info-value col-xs-6 ">
 													<div class="input-group">
 												<span class="input-group-addon">
@@ -707,6 +699,9 @@ function PersonalizaPerfil(){
 
 						<div class="profile-info-row">
 												<div class="profile-info-name blue"> Feed Id </div>
+
+                                                <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                                                <a class="fa fa-question-circle" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Ingresa el feed id"></a>
 
 												<div class="profile-info-value col-xs-6 ">
 													<div class="input-group">
@@ -724,6 +719,9 @@ function PersonalizaPerfil(){
 						<div class="profile-info-row">
 							<div class="profile-info-name blue"> Data Custodian </div>
 
+                            <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                            <a class="fa fa-question-circle" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Ingresa el nombre del dueño del reporte"></a>
+
 							<div class="profile-info-value col-xs-6 ">
 								<div class="input-group">
 												<span class="input-group-addon">
@@ -737,6 +735,11 @@ function PersonalizaPerfil(){
 
 						<div class="profile-info-row">
 							<div class="profile-info-name blue"> Date Information </div>
+                            
+                                <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                            <a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Ingresa la fecha"></a>
+                            
+                            
 
 							<div class="profile-info-value  col-xs-6 ">
 								<div class="input-group">
@@ -798,14 +801,18 @@ function PersonalizaPerfil(){
 												Reportes y Productos
 											</h4>
 
-
+                                        
 
 
 
 
 <div id="home" class="tab-pane active">
 			<div class="row">
-				<div class="col-xs-12 col-sm-2 center">
+                <!--mesaje descriptibo ?-->
+                <div align="center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Seleccione el producto al cual se le va a realizar el ejercico"></a>                      
+                </div>
+                <div class="col-xs-12 col-sm-2 center">
 				<div class="space space-4"></div>
 				<div class="space space-4"></div>
 				<div class="space space-4"></div>
@@ -814,7 +821,7 @@ function PersonalizaPerfil(){
 				<div class="space space-4"></div>
 				<div class="space space-4"></div>
 				<div class="space space-4"></div>
-				<div class="space space-4"></div>										
+				<div class="space space-4"></div>									
 				<div class="space space-4"></div>
 				<div class="space space-4"></div>
 									<div class="space space-4"></div>
@@ -848,7 +855,6 @@ function PersonalizaPerfil(){
 					<div class="space space-4"></div>
 					<div class="space space-4"></div>
 					<div class="space space-4"></div>
-
 					<div class="space space-4"></div>
 					<div class="space space-4"></div>
 					<div class="space space-4"></div>
@@ -868,10 +874,10 @@ function PersonalizaPerfil(){
 
 
 
-
 					
-				</div><!-- /.col -->
-
+				</div>
+                <!-- /.col -->
+                    
 				<div class="col-xs-12 col-sm-6">
 <!--
 					<h4 class="blue">
@@ -886,81 +892,106 @@ function PersonalizaPerfil(){
 					<div class="profile-user-info">
 
 						<div class="profile-info-row">
-												<div class="profile-info-name blue"> Productos </div>
+                            
+                            <div class="profile-info-name blue">
+                                 Productos 
+                            </div>
+                            
+                            
+                            <div class="profile-info-value col-xs-6 ">
 
-												<div class="profile-info-value col-xs-6 ">
-													<span>
-						<div class="input-group">
-												<span class="input-group-addon">
-													<i class="blue fa fa-cc-visa"></i>
-												</span>
-												<!--
-												<input type="text" value="" id="inputUsuario" name="inputUsuario" class="form-control" placeholder="Email" required="" autofocus="">
-												-->
-										<select data-placeholder="Productos..." 
-											class="chosen-select"  style="width:425px;" tabindex="4">
-											<option value="">Select</option>
-											<option value="IPAB">Tarjetas de Crédito</option>
-											<option value="Cheques">Créditos Personales</option>
-											<option value="Hoptecario">Créditos Nomina</option>
-											<option value="Personal">Hipotecario</option>
-											<option value="Personal">Pyme</option>
-											<option value="Personal">Infonavit</option>
-										</select>
+                                <span>
+                                    
 
-
+                                    <div class="input-group">
+									<span class="input-group-addon">   
+									<i class="blue fa fa-cc-visa"></i>
+                                                    
+								</span>
+                                <!--
+			                    <input type="text" value="" id="inputUsuario" name="inputUsuario" class="form-control" placeholder="Email" required="" autofocus="">
+								-->
+                                <select data-placeholder="Productos..." class="chosen-select"  style="width:425px;" tabindex="4">
+                                    <option value="">Select</option>
+                                    <option value="IPAB">Tarjetas de Crédito</option>
+                                    <option value="Cheques">Créditos Personales</option>
+                                    <option value="Hoptecario">Créditos Nomina</option>
+                                    <option value="Personal">Hipotecario</option>
+                                    <option value="Personal">Pyme</option>
+                                    <option value="Personal">Infonavit</option>
+                                </select>
+                    
+                                         
+                            </div> 
+                                        
+                                                      
+                        </div>
+                       
+                        
+                      			
+					</div>	
+                    						
+											
 												
-											</div>							
-													</span>
-												</div>
-											</div>
+						
+
+
 
 						<div class="profile-info-row">
-												<div class="profile-info-name blue"> Reporte Regulatorio </div>
+                            <div class="profile-info-name blue"> Reporte Regulatorio </div>
+                            <!--mensaje descirptivo ?-->
+                            <div align="right">
+                                <a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Seleccione el nombre del reporte al cual se le va a realizar el ejercico"></a>                      
+                            </div>
+                            <div class="profile-info-value col-xs-6 ">
+                                <span> 
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="blue fa  fa-cc-visa"></i>
+										</span>
+                                        			
+										<!--
+										<input type="tel" value="" id="telefono" name="telefono" class="form-control" placeholder="Numero De oficina" required="" autofocus="">
+										-->
+									   <!-- select Group 
+										<div class="col-lg-8">
+										-->
+                                        <select data-placeholder="Select Report" class="chosen-select" tabindex="5" style="width: 425px">
+                                            <option value=""></option>
 
-												<div class="profile-info-value col-xs-6 ">
-													<span>
-<div class="input-group">
-												<span class="input-group-addon">
-													<i class="blue fa  fa-cc-visa"></i>
-												</span>
-												
-												<!--
-												<input type="tel" value="" id="telefono" name="telefono" class="form-control" placeholder="Numero De oficina" required="" autofocus="">
-												-->
-									  <!-- select Group 
-												<div class="col-lg-8">
-												  -->
-												  <select data-placeholder="Select Report" class="chosen-select" tabindex="5" style="width: 425px">
-													<option value=""></option>
-													<optgroup label="Reportes Globales">
-													  <option>FRY-14Q</option>
-													  <option>252A</option>
-													  <option>RWA</option>
-													</optgroup>
+											<optgroup label="Reportes Globales">
+                                                <option>FRY-14Q</option>
+											    <option>252A</option>
+											    <option>RWA</option>
+											</optgroup>
 
-													<optgroup label="Reportes Locales">
-													  <option>IPAB</option>
-													  <option>Cheques de Caja</option>
-													  <option>Operaciones Relevantes</option>
-													  <option>Operaciones en Dolares</option>
-													  <option>CNR</option>
-													  <option>CR</option>
-													  <option>RO4H</option>
-													  <option>PnL</option>
-													</optgroup>
-												  </select>
+                                            <optgroup label="Reportes Locales">
+                                                <option>IPAB</option>
+												<option>Cheques de Caja</option>
+												<option>Operaciones Relevantes</option>
+												<option>Operaciones en Dolares</option>
+												<option>CNR</option>
+												<option>CR</option>
+												<option>RO4H</option>
+												<option>PnL</option>
+											</optgroup>
+										</select>
+
+                                    </div>
+                                    
+                                </span>    
 								<!--				  
 												</div>
 												
-								 END select Group -->
-
+								 END select Group -->                            
+                            </div>  
+                            
+                            
 												
+                        </div>										
+					<!--</span>-->
 												
-											</div>					
-					</span>
-												</div>
-											</div>
+                                             
 
 
 
@@ -977,10 +1008,10 @@ function PersonalizaPerfil(){
 
 
 
-<!--
- <link href="../css/animate.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
--->
+                                                <!--
+                                                <link href="../css/animate.css" rel="stylesheet">
+                                                <link href="../css/style.css" rel="stylesheet">
+                                                -->
 										<!--
 											<input type="tel" value="" id="telefonoce" name="inputUsuario" class="form-control" placeholder="Celular" required="" autofocus="">
 										-->
@@ -998,26 +1029,45 @@ function PersonalizaPerfil(){
 										
 
 										</div>
+
+                                        
 										
 										</div>
+
+                                        
 								</span>
-							</div>
+
+                                
+							</div><br><br><br><br><br><br><br>
+
+                            <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                            <a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Seleccione los atributos a los cuales desea realizar el ejercicio"></a>
 						</div>
 
 
 					<div class="profile-info-row">
+                        
 							<div class="profile-info-name blue"> Date Information </div>
-
+                            
 							<div class="profile-info-value  col-xs-12 ">
+                                <div align="right">
+                                    <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                                    <a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" data-content="Seleccione la fecha del reporte que quiere consultar"></a>
+                                </div>
 								<div class="input-group">
-												<span class="input-group-addon">
-													<i class=" blue fa fa-calendar fa-lg"></i>
-												</span>
-								<input type="date" value="" id="inputUsuario" name="inputUsuario" 
-								class="form-control" placeholder="Fecha De la información" required="" autofocus="">
+                                    
+                                    <span class="input-group-addon">
+										<i class=" blue fa fa-calendar fa-lg"></i>            
+									</span>
+                                    
+                                    <input type="date" value="" id="inputUsuario" name="inputUsuario" class="form-control" placeholder="Fecha De la información" required="" autofocus="">
+                                
 								</div>
+                                
 							</div>
-						</div>					
+                            
+                            
+					</div>					
 
 <!--
 
@@ -1038,7 +1088,9 @@ function PersonalizaPerfil(){
 -->
 					</div>
 
-					<div class="hr hr-8 dotted"></div>
+					<div class="hr hr-8 dotted">
+
+                    </div>
 
 					<div class="profile-user-info">
 
@@ -1280,10 +1332,17 @@ function PersonalizaPerfil(){
 											</div>
 										</div>
 										<div id="faq-tab-4" class="tab-pane fade">
+
 											<h4 class="blue">
 												<i class="blue ace-icon fa fa-check bigger-110"></i>
 												Regulatory Report Account Balance
+                                                <!--################################Codigo para agregar mensaje descriptivo######################################-->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fa fa-question-circle " data-toggle="popover" data-placement="right" data-trigger="hover" 
+                            data-content="Evidencia con la cual se va a comparar los datos o resultados obtenidos, ej. estado de cuenta, contrato, patalla de algún sistema, etc." title="LTP"></a>
 											</h4>
+
+                                            
+                                            
 
 <style>
 img ssa {
