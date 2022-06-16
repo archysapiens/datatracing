@@ -7,8 +7,15 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-	
-	    <style>
+
+
+
+
+
+ 
+    
+
+<style>
 
         .wizard > .content > .body { position: relative; }
 		
@@ -47,9 +54,9 @@
 }
 
 
-
     </style>
-	
+
+
 	
 
 <div class="ibox-content">	
@@ -62,12 +69,13 @@
 								<h1>Configuración</h1>
                                 <fieldset>
                                     <h2> Regulatory Data Tracing Process Configuration</h2>
+                                        Button name
+                                    </button>
                                     <div class="row">
                                      <div class="col-sm-6">
 <!--  primer tab -->
 										<div class="profile-info-name blue">  </div>
-
-											<div class="profile-info-value col-xs-12 ">
+											<div class="profile-info-value col-xs-12 "> 
 												<div class="input-group">
 													<span class="input-group-addon" >
 														<i class="blue fa fa-key fa-lg"></i>
@@ -76,8 +84,7 @@
 														</span>
 													</span>
 													<div class="form-group">
-			<input data-toggle="tooltip"  title="Identificador del ejercicio" type="text" value="" id="inputUsuario" name="inputUsuario" class="form-control required" placeholder="Id Data Tracing Event" required="" autofocus="">
-
+                                                            <input type="text" value="" id="inputUsuario" name="inputUsuario" class="form-control required" placeholder="Id Data Tracing Event" required="" autofocus="">
 													</div>
 												</div>
 										</div>
@@ -120,18 +127,23 @@
 <!-- fin primer tab -->
 											
                                         </div>
-                                        
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-1" style="margin-left: 510px;position: absolute; margin-top:15px;">
+                                            ​<a class="fa fa-question-circle" data-toggle="popover" title="Ingresa el nombre del ejercicio" ></a>
+                                            <div class="form-group" style="margin-top: 69%;">
+                                                ​<a class="fa fa-question-circle" data-toggle="popover" title="Ingresa el nombre del reporte" ></a>
+                                            </div>
+                                            <div class="form-group" style="margin-top: 69%;">
+                                                ​<a class="fa fa-question-circle" data-toggle="popover" title="Ingresa el nombre del dueño del reporte" ></a>
+                                            </div>
+                                      </div>
+                                        <div class="col-sm-5">
                                             <div class="text-center">
                                                 <div style="margin-top: 20px">
                                                     <i class="fa fa-gears" style="font-size: 180px;color: #e5e5e5 "></i>
                                                 </div>
 											</div>
-                                            </div>
-
+                                         </div>
                                     </div>
-
-
                                 </fieldset>
                                 <h1>Data Set</h1>
                                 <fieldset style="display: block;padding-top: 10px;">
@@ -291,13 +303,13 @@
                                             <div class="form-group">
                                                 <label>Date Information</label>
                                                 <input type="date" value="" id="inputUsuario" name="inputUsuario" class="form-control"
-                                                    placeholder="Fecha De la información" required="" autofocus="">
+                                                    placeholder="Fecha De la información" style="width:95%;" tabindex="4">
                                             </div>
                                         
                                             <div class="form-group">
                                                 <label>Num Rows</label>
                                                 <input type="text" value="100" id="numRows" name="inputUsuario" class="form-control"
-                                                    placeholder="Número de regstros a recuperar." required="" autofocus="">
+                                                    placeholder="Número de regstros a recuperar." style="width:95%;" tabindex="4">
                                             </div>
                                         
                                             <div class="form-group">
@@ -308,9 +320,33 @@
                                             </div>
                                         
                                         </div>
+                                        
+                                        <!--mensajes tooltips-->
+                                        <div class="col-sm-1" style="margin-left: 520px;position: absolute; margin-top:0px;">
+                                            <a class="fa fa-question-circle" data-bs-toggle="tooltip"
+                                                title="Seleccione el nombre del reporte para realizar el ejercicio" style="margin-right:auto"></a>
+                                        
+                                            <div class="form-group" style="margin-top: 40%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip"
+                                                    title="Seleccione el producto para realizar el ejercicio" style="margin-right:auto"></a>
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-top: 50%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione los atributos del producto"
+                                                    style="margin-right:auto"></a>
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-top: 164%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione la fecha del día del reporte"
+                                                    style="margin-right:auto"></a>
+                                                <br><br><br><br>
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Indique el numero de filas a mostrar"></a>
+                                            </div>
+                                        
+                                        
+                                        </div>
 
-
-							<div id="jqgridPanel" class="col-lg-6">
+							<div id="jqgridPanel" class="col-lg-5">
 								     <div id="idGears" class="text-center">
 									 								<hr>	
 								<hr><hr><hr><hr>
@@ -373,6 +409,7 @@
 
                                 <h1>LTP</h1>
                                 <fieldset>
+                                    <h3>LTP <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Archivo contra el cual se compara el resultado de los valores obtenidos ej. estado de cuenta"></a></h3>
                                     <h2>Regulatory Report Account Balance</h2>
 									<!--
                                     <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
@@ -737,6 +774,7 @@
     <script src="../js/plugins/validate/jquery.validate.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
 <script>
 
 
