@@ -80,7 +80,7 @@
 													<span class="input-group-addon" >
 														<i class="blue fa fa-key fa-lg"></i>
 														<span>
-														Data Tracing Name
+														Data Tracing Name 
 														</span>
 													</span>
 													<div class="form-group">
@@ -97,7 +97,7 @@
 													<span class="input-group-addon" >
 														<i class="blue fa fa-key fa-lg"></i>
 														<span>
-														Reporte
+														Reporte 
 														</span>
 													</span>
 													<div class="form-group">
@@ -114,7 +114,7 @@
 												<span class="input-group-addon"   >
 													<i class="blue fa fa-user fa-lg"></i>
 													<span>
-														Report Owner
+														Report Owner 
 													</span>
 												</span>
 												<div class="form-group">
@@ -150,113 +150,202 @@
                                     <h2> Reportes y Productos</h2>
                                     <div class="row">
                                         <div class="col-lg-6">
-										
+                                        
                                             <div class="form-group">
-                                                <label style="min-width: 64px;">   Reporte</label>
-												<select data-placeholder="Select Report" class="chosen-select" tabindex="5" style="width: 450px">
-													<option value="">Seleccione Reporte</option>
-													<optgroup label="Reportes Globales">
-													  <option>FRY-14Q</option>
-													  <option>252A</option>
-													  <option>RWA</option>
-													</optgroup>
-
-													<optgroup label="Reportes Locales">
-													  <option>IPAB</option>
-													  <option>Cheques de Caja</option>
-													  <option>Operaciones Relevantes</option>
-													  <option>Operaciones en Dolares</option>
-													  <option>CNR</option>
-													  <option>CR</option>
-													  <option>RO4H</option>
-													  <option>PnL</option>
-													</optgroup>
-												  </select>
-
-
-<!--
-                                                <input id="name" name="name" type="text" class="form-control required">
--->												
+                                                <label>Reporte</label>
+                                                <select id="combobox1" name="combobox1" data-placeholder="Select Report" class="chosen-select" tabindex="5"
+                                                    style="width: 425px">
+                                                </select>
+                                                <!--
+                                                                                        <input id="name" name="name" type="text" class="form-control required">
+                                        -->
                                             </div>
                                             <div class="form-group">
                                                 <label>Producto</label>
-										<select data-placeholder="Productos..." 
-											class="chosen-select"  style="width:450px;" tabindex="4">
-											<option value="">Seleccione Producto</option>
-											<option value="IPAB">Tarjetas de Crédito</option>
-											<option value="Cheques">Créditos Personales</option>
-											<option value="Hoptecario">Créditos Nomina</option>
-											<option value="Personal">Hipotecario</option>
-											<option value="Personal">Pyme</option>
-											<option value="Personal">Infonavit</option>
-										</select>
-
-												
-<!--												
-                                                <input id="surname" name="surname" type="text" class="form-control required">
--->												
+                                                <select id="combobox2" name="combobox2" data-placeholder="Productos..." class="chosen-select"
+                                                    style="width:425px;" tabindex="4">
+                                                </select>
+                                                <!--												
+                                                                                                                                    <input id="surname" name="surname" type="text" class="form-control required">
+                                                                                    -->
                                             </div>
-											
+                                            <div class="form-group">
+                                                <label style="float: left;">Atributos</label>
+                                                <select id="combobox3" name="combobox3" multiple data-placeholder="Productos..." class="chosen-select"
+                                                    style="width:425px;" tabindex="4">
+                                                </select>
+                                                <!--												
+                                                                                                                                    <input id="surname" name="surname" type="text" class="form-control required">
+                                                                                    -->
+                                            </div>
                                         
-										
-										
-                                    <div class="form-group">
-										<div class="ibox-content">
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Total Balance</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Due Balance</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Day Past Due</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-1-xs ">Minimkum Amount to Pay</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Ordinary Interest Rate</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Moratorium Interest Rate</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Bucket</span> <br>
-											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Risk Indicator</span> <br>
-										</div>
-									</div>
+                                        
+                                            <script type="text/javascript">
 
+                                                let reportes = ["Seleccione Reporte", "FRY-14Q", "2052A", "RWA", "IPAB", "CNR"];
+                                                let productos = ["Préstamos personales", "Tarjetas", "Depósitos", "Hipoteca",
+                                                    "Tarjetas de crédito", "Pequeños negocios", "Créditos de consumo"];
+                                                let atributos = ["NUMCLIENTE", "TPER", "CUENTABASICA", "ROLLOVER", "DIGITO", "CTE_LIBRE",
+                                                    "V_ACCT", "N_CURR_BAL", "N_CYCLE_DUE", "V_ORG", "N_TAX_BNP_LIQ",
+                                                    "NUMCLIENTE", "TPER", "DIGITO", "ROLLOVER", "CUENTABASICA", "CTE_GFCID", "CTE_LIBRE2",
+                                                    "NUMCLIENTE", "TPER", "CTE_GFCID", "CTE_LIBRE2", "CTE_NUM",
+                                                    "FECHA_DISPOSICION", "FECHA_VENCIMIENTO", "CONTRATO", "MX_ESTATUS_CONTRATO", "TASA_INTERES", "PLAZO"]
 
-                                    <div class="form-group">
-										 <label>Date Information</label>
-										<input type="date" value="" id="inputUsuario" name="inputUsuario" 
-										class="form-control" placeholder="Fecha De la información" required="" autofocus="">
-									</div>
-									
-                                <div class="form-group">
-                                     <label>Num Rows</label>
-									<input type="text" value="100" id="numRows" name="inputUsuario" class="form-control" placeholder="Número de regstros a recuperar." required="" autofocus=""> 
-								</div> 
-								
-                               <div class="form-group">
-									<a id="btnConnx" href="#" class="btn btn-sm btn-block btn-primary">
-										<i class="ace-icon fa fa-plus-circle bigger-120"></i>
-										<span class="bigger-110">Connection</span>
-									</a>
-								</div>
-									
-							</div>
-                            
-                            <!--mensajes tooltips-->
-                            <div class="col-sm-1" style="margin-left: 520px;position: absolute; margin-top:0px;">
-                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione el nombre del reporte para realizar el ejercicio" style="margin-right:auto"></a>
-                                
-                                <div class="form-group" style="margin-top: 40%;">
-                                    <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione el producto para realizar el ejercicio" style="margin-right:auto"></a>
-                                </div>
-                                
-                                <div class="form-group" style="margin-top: 50%;">
-                                    <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione los atributos del producto" style="margin-right:auto"></a>
-                                </div>
-                                
-                                <div class="form-group" style="margin-top: 364%;">
-                                    <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione la fecha del día del reporte" style="margin-right:auto"></a>
-                                    <br><br><br><br>
-                                    <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Indique el numero de filas a mostrar"></a>
-                                </div>
-                                
-                                
-                          </div>
+                                                let combobox1 = document.getElementById("combobox1")
+                                                let combobox2 = document.getElementById("combobox2")
+                                                let combobox3 = document.getElementById("combobox3")
 
+                                                function Recorrer(combobox, valores) {
+                                                    combobox2.innerHTML = ''
+                                                    combobox3.innerHTML = ''
 
-                            
+                                                    for (let index of valores) {
+                                                        combobox.innerHTML += `
+                                                        <option>${index}</option>
+                                                        `
+                                                    }
+                                                }
+
+                                                function llenarproduc() {
+                                                    Recorrer(combobox1, reportes)
+                                                }
+                                                llenarproduc()
+
+                                                combobox1.addEventListener('change', (e) => {
+                                                    let dato = e.target.value
+                                                    switch (dato) {
+                                                        case 'Seleccione Reporte':
+                                                            Recorrer(combobox2)
+                                                            break;
+                                                        case 'FRY-14Q':
+                                                            Recorrer(combobox2, productos.slice(4, 7))
+                                                            break;
+                                                        case '2052A':
+                                                            Recorrer(combobox2, productos.slice(0, 4))
+                                                            break;
+                                                        case 'RWA':
+                                                            Recorrer(combobox2, productos.slice(2, 5))
+                                                            break;
+                                                        case 'IPAB':
+                                                            Recorrer(combobox2, productos.slice(1, 4))
+                                                            break;
+                                                        case 'CNR':
+                                                            Recorrer(combobox2, productos.slice(0, 3))
+                                                            break;
+
+                                                        default:
+                                                            break;
+                                                    }
+                                                })
+
+                                                function Recorrer1(comboboxM, valoress) {
+                                                    combobox3.innerHTML = ''
+
+                                                    for (let index of valoress) {
+                                                        comboboxM.innerHTML += `
+                                                        <option value=" ">${index}</option>
+                                                        `
+                                                    }
+                                                }
+
+                                                function llenarproduc2() {
+                                                    Recorrer1(combobox2, atributos)
+                                                }
+
+                                                combobox2.addEventListener('change', (e) => {
+                                                    let dato1 = e.target.value
+                                                    switch (dato1) {
+                                                        case 'Préstamos personales':
+                                                            Recorrer1(combobox3, atributos.slice(0, 6))
+                                                            break;
+                                                        case 'Tarjetas':
+                                                            Recorrer1(combobox3, atributos.slice(6, 11))
+                                                            break;
+                                                        case 'Depósitos':
+                                                            Recorrer1(combobox3, atributos.slice(11, 18))
+                                                            break;
+                                                        case 'Hipoteca':
+                                                            Recorrer1(combobox3, atributos.slice(18, 23))
+                                                            break;
+                                                        case 'Tarjetas de crédito':
+                                                            Recorrer1(combobox3, atributos.slice(23, 26))
+                                                            break;
+                                                        case 'Pequeños negocios':
+                                                            Recorrer1(combobox3, atributos.slice(26, 29))
+                                                            break;
+                                                        case 'Créditos de consumo':
+                                                            Recorrer1(combobox3, atributos.slice(2, 6))
+                                                            break;
+
+                                                        default:
+                                                            break;
+                                                    }
+                                                });
+
+                                            </script>
+                                        
+                                        
+                                            <!--
+                                                                            <div class="form-group">
+                                        										<div class="ibox-content">
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Total Balance</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Due Balance</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Day Past Due</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-1-xs ">Minimkum Amount to Pay</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Ordinary Interest Rate</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Moratorium Interest Rate</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Bucket</span> <br>
+                                        											<input type="checkbox" id="checkbox"  > <span class="m-l-xs ">Risk Indicator</span> <br>
+                                        										</div>
+                                        									</div>
+                                        -->
+                                        
+                                            <div class="form-group">
+                                                <label>Date Information</label>
+                                                <input type="date" value="" id="inputUsuario" name="inputUsuario" class="form-control"
+                                                    placeholder="Fecha De la información" style="width:95%;" tabindex="4">
+                                            </div>
+                                        
+                                            <div class="form-group">
+                                                <label>Num Rows</label>
+                                                <input type="text" value="100" id="numRows" name="inputUsuario" class="form-control"
+                                                    placeholder="Número de regstros a recuperar." style="width:95%;" tabindex="4">
+                                            </div>
+                                        
+                                            <div class="form-group">
+                                                <a id="btnConnx" href="#" class="btn btn-sm btn-block btn-primary">
+                                                    <i class="ace-icon fa fa-plus-circle bigger-120"></i>
+                                                    <span class="bigger-110">Connection</span>
+                                                </a>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <!--mensajes tooltips-->
+                                        <div class="col-sm-1" style="margin-left: 520px;position: absolute; margin-top:0px;">
+                                            <a class="fa fa-question-circle" data-bs-toggle="tooltip"
+                                                title="Seleccione el nombre del reporte para realizar el ejercicio" style="margin-right:auto"></a>
+                                        
+                                            <div class="form-group" style="margin-top: 40%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip"
+                                                    title="Seleccione el producto para realizar el ejercicio" style="margin-right:auto"></a>
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-top: 50%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione los atributos del producto"
+                                                    style="margin-right:auto"></a>
+                                            </div>
+                                        
+                                            <div class="form-group" style="margin-top: 164%;">
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Seleccione la fecha del día del reporte"
+                                                    style="margin-right:auto"></a>
+                                                <br><br><br><br>
+                                                <a class="fa fa-question-circle" data-bs-toggle="tooltip" title="Indique el numero de filas a mostrar"></a>
+                                            </div>
+                                        
+                                        
+                                        </div>
+
 							<div id="jqgridPanel" class="col-lg-5">
 								     <div id="idGears" class="text-center">
 									 								<hr>	
@@ -352,7 +441,7 @@
                     <td id="ltptd">HIPOTECA</td>
                     <td id="ltptd">RT-SGL-145678-JIYH-FF-MX</td>
                     <td id="ltptd">0102030405</td>
-                    <td id="ltptd">BASE_CJU_RGZ</td>
+                    <td id="ltptd">TPER</td>
                     <td id="ltptd">
                         <div class="profile-info-row">
 							<div class="profile-info-value  col-xs-6 ">
@@ -399,7 +488,7 @@
                         <td id="ltptd">PRESTAMOS</td>
                         <td id="ltptd">RT-SGL-145678-FF-MX-000</td>
                         <td id="ltptd">00000000</td>
-                        <td id="ltptd">RISK_CFT_RGZ</td>
+                        <td id="ltptd">CTE LIBRE</td>
                         <td id="ltptd">
                             <div class="profile-info-row">
                                 <div class="profile-info-value  col-xs-6 ">
@@ -446,7 +535,7 @@
                         <td id="ltptd">TARJETA DE CREDITO</td>
                         <td id="ltptd">RT-SGL-145678-M78546-MX</td>
                         <td id="ltptd">07892315</td>
-                        <td id="ltptd">UNIQ_ID_CCY_RGZ</td>
+                        <td id="ltptd">FECHA DISPOSICION</td>
                         <td id="ltptd">
                             <div class="profile-info-row">
                                 <div class="profile-info-value  col-xs-6 ">
@@ -490,10 +579,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="ltptd">TARJETA DE CREDITO</td>
+                        <td id="ltptd">PEQUEÑOS NEGOCIOS</td>
                         <td id="ltptd">RT-SGL-145678-MTDS-FF-MX</td>
                         <td id="ltptd">0102030405</td>
-                        <td id="ltptd">BASE_CCY_RGZ</td>
+                        <td id="ltptd">PLAZO</td>
                         <td id="ltptd">
                             <div class="profile-info-row">
                                 <div class="profile-info-value  col-xs-6 ">
@@ -540,7 +629,7 @@
                         <td id="ltptd">HIPOTECA</td>
                         <td id="ltptd">RT-YPW-PPLKR-9854-FF-MX01</td>
                         <td id="ltptd">019073545</td>
-                        <td id="ltptd">RISK_MGT_HFT-CD</td>
+                        <td id="ltptd">CTE NUM</td>
                         <td id="ltptd">
                             <div class="profile-info-row">
                                 <div class="profile-info-value  col-xs-6 ">
@@ -587,7 +676,7 @@
                             <td id="ltptd">PRESTAMOS</td>
                             <td id="ltptd">RT-SGL-14FDKO8-MTDS-KFJ-5432</td>
                             <td id="ltptd">0102030405</td>
-                            <td id="ltptd">UNIQ_FG_KHL</td>
+                            <td id="ltptd">ROLLOVER</td>
                             <td id="ltptd">
                                 <div class="profile-info-row">
                                     <div class="profile-info-value  col-xs-6 ">
